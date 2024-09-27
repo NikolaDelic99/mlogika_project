@@ -1,10 +1,14 @@
 package com.example.demo.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Contact {
 	private Long id;
+	@JsonProperty("account_id")
     private Long accountId; 
     private String type; 
     private String contact;
+    @JsonProperty("primary_contact")
     private boolean is_primary;
 
     

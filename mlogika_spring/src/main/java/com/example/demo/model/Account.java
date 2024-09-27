@@ -1,12 +1,16 @@
 package com.example.demo.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Account {
 	private Long id;
 	private String firstname;
 	private String lastname;
 	private String username;
 	private String salt;
+	@JsonProperty("contact_type")
 	private String contactType;
+	@JsonProperty("contact_contact")
     private String contactContact;
 	
 	public Long getId() {
