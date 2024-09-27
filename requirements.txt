@@ -1,0 +1,6 @@
+Java JDK 8 (8u112)
+Eclipse IDE (2024-06)
+Postman
+MySQL Server
+Maven
+Spring Boot (2.7.18)
