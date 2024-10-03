@@ -132,7 +132,7 @@ public class AccountService {
 
     public ResponseEntity<Map<String, Object>> getAccounts() {
         try {
-            String sql = "SELECT a.firstname, a.lastname, a.username, c.type as contact_type, c.contact as contact_contact " +
+            String sql = "SELECT a.id,a.firstname, a.lastname, a.username, c.type as contact_type, c.contact as contact_contact " +
                          "FROM Account a LEFT JOIN Contact c ON a.id = c.account_id WHERE c.primary_contact = true";
             List<Map<String, Object>> accounts = jdbcTemplate.queryForList(sql);
             
@@ -150,7 +150,7 @@ public class AccountService {
 
     public ResponseEntity<Map<String, Object>> getContacts(int accountId) {
         try {
-            String sql = "SELECT type, contact, primary_contact FROM Contact WHERE account_id = ?";
+            String sql = "SELECT id,type, contact, primary_contact FROM Contact WHERE account_id = ?";
             List<Map<String, Object>> contacts = jdbcTemplate.queryForList(sql, accountId);
             
             Map<String, Object> response = new HashMap<>();
