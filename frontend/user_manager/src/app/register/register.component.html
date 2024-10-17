@@ -1,4 +1,4 @@
-<form (ngSubmit)="onSubmit()" #registerForm="ngForm">
+<form (ngSubmit)="onSubmit(registerForm)" #registerForm="ngForm">
     <div>
         <label for="firstname">First name:</label>
         <input type="text" id="firstname" name="firstname" ngModel required>

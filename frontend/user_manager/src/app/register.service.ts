@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class RegisterService {
 
-  private backendUrl = 'http://localhost:8080/register';
+  private backendUrl = 'http://localhost:8080/api/addAccount';
 
   constructor(private http:HttpClient) { }
 

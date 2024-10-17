@@ -25,9 +25,9 @@ export class RegisterComponent {
   }
   
 
-  onSubmit(){
-    if (this.registerForm.valid) {
-      const newUser = this.registerForm.value;
+  onSubmit(f:NgForm){
+    if (f.valid) {
+      const newUser = f.value;
 
       
       this.registerService.registerUser(newUser).subscribe(
