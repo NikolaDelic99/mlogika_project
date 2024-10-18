@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { NgForm } from '@angular/forms';
 import { RegisterService } from '../register.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-register',
@@ -27,7 +28,15 @@ export class RegisterComponent {
 
   onSubmit(f:NgForm){
     if (f.valid) {
-      const newUser = f.value;
+      const newUser = {
+        firstname: f.value.firstname,
+        lastname: f.value.lastname,
+        username: f.value.username,
+        password: f.value.password, 
+        contact_type: f.value.contactType, 
+        contact_contact: f.value.contact 
+      };
+      console.log('Sending user data:', newUser);
 
       
       this.registerService.registerUser(newUser).subscribe(

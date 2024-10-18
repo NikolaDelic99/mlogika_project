@@ -7,6 +7,7 @@ public class Account {
 	private String firstname;
 	private String lastname;
 	private String username;
+	@JsonProperty("password")
 	private String salt;
 	@JsonProperty("contact_type")
 	private String contactType;
