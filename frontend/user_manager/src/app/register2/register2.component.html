@@ -1,1 +1,39 @@
-<p>register2 works!</p>
+<form (ngSubmit)="onSubmit(registerForm)" #registerForm="ngForm">
+    <mat-form-field appearance="fill">
+        <mat-label>First name</mat-label>
+        <input matInput id="firstname" name="firstname" ngModel required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Last name</mat-label>
+        <input matInput id="lastname" name="lastname" ngModel required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Username</mat-label>
+        <input matInput id="username" name="username" ngModel required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput id="password" name="password" ngModel required type="password">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Contact type</mat-label>
+        <mat-select id="contactType" name="contactType" ngModel required>
+            <mat-option value="phone">Phone</mat-option>
+            <mat-option value="email">Email</mat-option>
+            <mat-option value="address">Address</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Contact</mat-label>
+        <input matInput id="contact" name="contact" ngModel required>
+    </mat-form-field>
+
+    <button mat-button type="submit" [disabled]="!registerForm.valid">Register</button>
+
+
+</form>
