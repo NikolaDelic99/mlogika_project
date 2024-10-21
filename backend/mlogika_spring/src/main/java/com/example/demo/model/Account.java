@@ -9,9 +9,8 @@ public class Account {
 	private String username;
 	@JsonProperty("password")
 	private String salt;
-	@JsonProperty("contact_type")
 	private String contactType;
-	@JsonProperty("contact_contact")
+	@JsonProperty("contact")
     private String contactContact;
 	
 	public Long getId() {

@@ -28,14 +28,7 @@ export class RegisterComponent {
 
   onSubmit(f:NgForm){
     if (f.valid) {
-      const newUser = {
-        firstname: f.value.firstname,
-        lastname: f.value.lastname,
-        username: f.value.username,
-        password: f.value.password, 
-        contact_type: f.value.contactType, 
-        contact_contact: f.value.contact 
-      };
+      const newUser = f.value;
       console.log('Sending user data:', newUser);
 
       
