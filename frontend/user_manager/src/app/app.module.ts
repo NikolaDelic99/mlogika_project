@@ -10,6 +10,7 @@ import { RegisterComponent } from './register/register.component';
 import { RegisterService } from './register/register.service';
 import { Register2Component } from './register2/register2.component';
 import { Register2Service } from './register2/register2.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { Register2Service } from './register2/register2.service';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [RegisterService,Register2Service],
   bootstrap: [AppComponent]
