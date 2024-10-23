@@ -18,6 +18,9 @@ import { MatSelectModule} from "@angular/material/select";
 import { MatButtonModule} from "@angular/material/button";
 import { AccountsComponent } from './accounts/accounts.component';
 
+import { MatTableModule } from "@angular/material/table";
+import { MatToolbarModule } from "@angular/material/toolbar";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +37,9 @@ import { AccountsComponent } from './accounts/accounts.component';
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTableModule,
+    MatToolbarModule
   ],
   providers: [RegisterService,Register2Service],
   bootstrap: [AppComponent]
