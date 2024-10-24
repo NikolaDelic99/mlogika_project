@@ -1,6 +1,6 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { UsersService } from '../services/users.service';
-import { Account } from '../model/Account';
+import { Account } from './Account';
 import { AccountResponse } from '../model/AccountResponse';
 
 @Component({
