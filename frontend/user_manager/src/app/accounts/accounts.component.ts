@@ -1,7 +1,7 @@
-import { Component, AfterViewInit } from '@angular/core';
-import { UsersService } from '../services/users.service';
+import { Component, AfterViewInit, ChangeDetectorRef } from '@angular/core';
 import { Account } from './Account';
-import { AccountResponse } from '../model/AccountResponse';
+import { MatTableDataSource } from '@angular/material/table';
+import { GetAccountsService } from '../services/get-accounts.service';
 
 @Component({
   selector: 'app-accounts',
@@ -11,20 +11,25 @@ import { AccountResponse } from '../model/AccountResponse';
 export class AccountsComponent implements AfterViewInit {
   
   public showedColumns:string[] = ["id","firstname","lastname","username","contact_type","contact_contact"];
-  public tableData:Account[]=[];
+  public tableData:MatTableDataSource<any> = new MatTableDataSource();
 
-  constructor(private usersService:UsersService) { }
+  constructor(private getAccountsService: GetAccountsService, private changeDetectorRef: ChangeDetectorRef) { }
 
   ngAfterViewInit(): void {
-    this.usersService.getAccounts().subscribe(
-      (data:AccountResponse) => {
-        console.log(data);
-        this.tableData=data.accounts;
+    this.getAccountsService.getAccounts.subscribe(
+      (accounts: Account[]) => {
+        console.log(accounts);
+        this.tableData.data=accounts;
       },
       (error) => {
-        console.error("Ne dohvata naloge",error);
+        console.log("Ne dohvata naloge.",error);
       }
       )
+      this.getAccountsService.getAllAccounts();
+      this.changeDetectorRef.detectChanges();
+    
+  
+    
     
     
   }
