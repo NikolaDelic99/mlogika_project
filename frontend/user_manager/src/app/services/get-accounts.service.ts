@@ -13,6 +13,8 @@ export class GetAccountsService {
   public getAccounts!: Observable<Account[]>;
   subscription: Subscription[]=[];
 
+  public firstLoad=true;
+
   constructor(private accountsService:AccountsService) {
     this.init();
    }
@@ -38,5 +40,9 @@ export class GetAccountsService {
         console.error("Ne dohvata naloge.",error);
       }
     ))
+
+    console.log("Pozvan");
+
+    this.firstLoad=false;
   }
 }

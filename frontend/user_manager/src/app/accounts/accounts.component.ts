@@ -25,13 +25,21 @@ export class AccountsComponent implements AfterViewInit {
         console.log("Ne dohvata naloge.",error);
       }
       )
-      this.getAccountsService.getAllAccounts();
+
+      if(this.getAccountsService.firstLoad){
+        this.getAccountsService.getAllAccounts();
+      }
+      
       this.changeDetectorRef.detectChanges();
     
   
     
     
     
+  }
+
+  refreshAccounts() {
+    this.getAccountsService.getAllAccounts();
   }
 
 }
