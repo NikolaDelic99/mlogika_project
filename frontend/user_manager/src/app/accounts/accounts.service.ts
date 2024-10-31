@@ -21,7 +21,7 @@ export class AccountsService {
     }
 
   deleteAccount(accountId:number):Observable<void>{
-    return this.http.post<void>(`${this.deteleUrl}/${accountId}`,null);
+    return this.http.post<void>(this.deteleUrl,{"id":accountId.toString()});
   }
    
 }

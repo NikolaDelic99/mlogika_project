@@ -47,8 +47,11 @@ export class AccountsComponent implements AfterViewInit {
   onDelete(accountId:number):void{
     const snackBarRef = this.snackBar.open("Are you sure?","OK",{
       duration:5000,
-      panelClass:["custom-snackbar"]
+      panelClass:["custom-snackbar"],
+      
     });
+
+  ;
     snackBarRef.onAction().subscribe(()=>{
       this.accountsService.deleteAccount(accountId).subscribe(
         () => {
