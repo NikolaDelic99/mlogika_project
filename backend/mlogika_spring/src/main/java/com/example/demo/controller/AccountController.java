@@ -19,27 +19,27 @@ public class AccountController {
     private AccountService service;
 
     @PostMapping("/addAccount")
-    public ResponseEntity<Map<String, String>> addAccount(@RequestBody Account account) {
+    public ResponseEntity<Map<String, Object>> addAccount(@RequestBody Account account) {
         return service.addAccount(account);
     }
 
     @PostMapping("/updateAccount")
-    public ResponseEntity<Map<String, String>> updateAccount(@RequestBody Account account) {
+    public ResponseEntity<Map<String, Object>> updateAccount(@RequestBody Account account) {
         return service.updateAccount(account);
     }
 
     @PostMapping("/deleteAccount")
-    public ResponseEntity<Map<String, String>> deleteAccount(@RequestBody Map<String, String> request) {
+    public ResponseEntity<Map<String, Object>> deleteAccount(@RequestBody Map<String, String> request) {
         return service.deleteAccount(Integer.parseInt(request.get("id")));
     }
 
     @PostMapping("/addContact")
-    public ResponseEntity<Map<String, String>> addContact(@RequestBody Contact contact) {
+    public ResponseEntity<Map<String, Object>> addContact(@RequestBody Contact contact) {
         return service.addContact(contact);
     }
 
     @PostMapping("/deleteContact")
-    public ResponseEntity<Map<String, String>> deleteContact(@RequestBody Map<String, String> request) {
+    public ResponseEntity<Map<String, Object>> deleteContact(@RequestBody Map<String, String> request) {
         return service.deleteContact(Integer.parseInt(request.get("id")));
     }
 

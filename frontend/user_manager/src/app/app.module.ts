@@ -21,6 +21,10 @@ import { AccountsComponent } from './accounts/accounts.component';
 import { MatTableModule } from "@angular/material/table";
 import { MatToolbarModule } from "@angular/material/toolbar";
 
+
+import { MatIconModule } from "@angular/material/icon";
+import { MatSnackBarModule } from "@angular/material/snack-bar";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +43,9 @@ import { MatToolbarModule } from "@angular/material/toolbar";
     MatSelectModule,
     MatButtonModule,
     MatTableModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatIconModule,
+    MatSnackBarModule
   ],
   providers: [RegisterService,Register2Service],
   bootstrap: [AppComponent]
