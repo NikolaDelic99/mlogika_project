@@ -11,7 +11,7 @@ export class GetAccountsService {
 
   private getAccountsSubject!: BehaviorSubject<Account[]>;
   public getAccounts!: Observable<Account[]>;
-  subscription: Subscription[]=[];
+  private subscriptions: Subscription[]=[];
 
   public firstLoad=true;
 
@@ -25,24 +25,37 @@ export class GetAccountsService {
   }
 
   public getAllAccounts() {
-    const getAccounts = this.accountsService.getAccounts();
-    this.subscription.push(getAccounts.subscribe(
-      (result:UserManagerResponse<Account>) => {
-        console.log("Data",result);
-        if(result.success){
+    const getAccountsSub = this.accountsService.getAccounts().subscribe(
+      (result: UserManagerResponse<Account>) => {
+        if (result.success) {
           this.getAccountsSubject.next(result.items);
-        }
-        else {
-          console.error("Desila se greska.");
+        } else {
+          console.error("Desila se greška prilikom dohvatanja naloga.");
         }
       },
       (error) => {
-        console.error("Ne dohvata naloge.",error);
+        console.error("Greška prilikom dohvatanja naloga:", error);
       }
-    ))
+    );
+    this.subscriptions.push(getAccountsSub);
+    this.firstLoad = false;
+  }
 
-    console.log("Pozvan");
+  public deleteAccount(accountId: number): void {
+    const deleteSub = this.accountsService.deleteAccount(accountId).subscribe(
+      () => {
+        console.log(`Nalog sa ID-jem ${accountId} je obrisan.`);
+        this.getAllAccounts(); 
+      },
+      (error) => {
+        console.error("Greška prilikom brisanja naloga:", error);
+      }
+    );
+    this.subscriptions.push(deleteSub);
+  }
 
-    this.firstLoad=false;
+  
+  public unsubscribeAll(): void {
+    this.subscriptions.forEach((subscription) => subscription.unsubscribe());
   }
 }
