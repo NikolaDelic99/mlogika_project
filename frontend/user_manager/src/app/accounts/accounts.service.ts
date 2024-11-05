@@ -13,6 +13,8 @@ export class AccountsService {
 
   private deteleUrl="http://localhost:8080/api/deleteAccount";
 
+  private getAccountUrl = "http://localhost:8080/api/getAccount";
+
   constructor(private http:HttpClient) { }
 
   
@@ -22,6 +24,11 @@ export class AccountsService {
 
   deleteAccount(accountId:number):Observable<void>{
     return this.http.post<void>(this.deteleUrl,{"id":accountId.toString()});
+  }
+
+  getAccount(accountId:number): Observable<UserManagerResponse<Account>> {
+    const url = "${this.getAccountUrl}/${accountId}";
+    return this.http.get<UserManagerResponse<Account>>(url);
   }
    
 }

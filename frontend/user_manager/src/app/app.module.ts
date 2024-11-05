@@ -24,13 +24,15 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 
 import { MatIconModule } from "@angular/material/icon";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
+import { UpdateAccountComponent } from './update-account/update-account.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
     Register2Component,
-    AccountsComponent
+    AccountsComponent,
+    UpdateAccountComponent
   ],
   imports: [
     BrowserModule,

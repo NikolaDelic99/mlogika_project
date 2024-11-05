@@ -54,6 +54,25 @@ export class GetAccountsService {
     this.subscriptions.push(deleteSub);
   }
 
+  public getSingleAccount(accountId:number): void {
+    const getSingleAccountSub = this.accountsService.getAccount(accountId).subscribe(
+      (result:UserManagerResponse<Account>) => {
+        if(result.success){
+          console.log("Dohvacen je nalog sa ID-em " + accountId,result.items);
+        }
+        else{
+          console.error("Greska prilikom dohvatanja naloga");
+        }
+      },
+      (error) => {
+        console.error("Greska prilikom dohvatanja jednog naloga",error);
+      }
+      );
+    
+    this.subscriptions.push(getSingleAccountSub);
+    
+  }
+
   
   public unsubscribeAll(): void {
     this.subscriptions.forEach((subscription) => subscription.unsubscribe());

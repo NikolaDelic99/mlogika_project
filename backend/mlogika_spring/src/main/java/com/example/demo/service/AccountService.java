@@ -167,5 +167,26 @@ public class AccountService {
             return ResponseEntity.badRequest().body(response);
         }
     }
+    
+    public ResponseEntity<Map<String,Object>> getAccount(int id){
+    	try {
+    		String sql="SELECT a.id , a.firstname , a.lastname, a.username, c.type as contact_type, c.contact as contact_contact " + 
+    				   "FROM Account a LEFT JOIN Contact c ON a.id = c.account_id " + 
+    				   "WHERE a.id = ? AND c.primary_contact = true";
+    		
+    		Map<String,Object> account = jdbcTemplate.queryForMap(sql,id);
+    		Map<String,Object> response = new HashMap<>();
+    		response.put("success", true);
+    		response.put("account", account);
+    		return ResponseEntity.ok(response);
+    	}
+    	catch (Exception e) {
+    		Map<String,Object> response = new HashMap<>();
+    		response.put("success", false);
+    		response.put("message", "Error fetching account with id " + id + e.getMessage());
+    		return ResponseEntity.badRequest().body(response);
+    	}
+    }
+    
 
 }

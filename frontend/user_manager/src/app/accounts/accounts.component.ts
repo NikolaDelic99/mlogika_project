@@ -4,6 +4,8 @@ import { MatTableDataSource } from '@angular/material/table';
 import { GetAccountsService } from '../services/get-accounts.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Subscription } from 'rxjs';
+import { Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-accounts',
@@ -19,7 +21,9 @@ export class AccountsComponent implements AfterViewInit, OnDestroy {
   constructor(
     private getAccountsService: GetAccountsService,
     private changeDetectorRef: ChangeDetectorRef,
-    private snackBar: MatSnackBar
+    private snackBar: MatSnackBar,
+    private router:Router,
+    private location:Location
   ) { }
 
   ngAfterViewInit(): void {
@@ -57,5 +61,10 @@ export class AccountsComponent implements AfterViewInit, OnDestroy {
     snackBarRef.onAction().subscribe(() => {
       this.getAccountsService.deleteAccount(accountId);
     });
+  }
+
+  onUpdateClick(accountId:number): void {
+    const url = this.router.createUrlTree(['/updateaccount', accountId]).toString();
+    this.location.go(url);
   }
 }

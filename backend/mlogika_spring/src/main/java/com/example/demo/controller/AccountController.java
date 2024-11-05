@@ -52,6 +52,11 @@ public class AccountController {
     public ResponseEntity<Map<String, Object>> getContacts(@RequestParam int accountId) {
         return service.getContacts(accountId);
     }
+    
+    @GetMapping("/getAccount")
+    public ResponseEntity<Map<String,Object>> getAccount(@RequestParam int id){
+    	return service.getAccount(id);
+    }
 	
     
 }
