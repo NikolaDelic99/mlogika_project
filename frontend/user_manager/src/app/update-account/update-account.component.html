@@ -1,8 +1,8 @@
-<form (ngSubmit)="onSubmit(registerForm)" #registerForm="ngForm">
+<form [formGroup]="accountForm" (ngSubmit)="onSubmit()">
 
     <mat-form-field appearance="fill">
         <mat-label>ID</mat-label>
-        <input matInput formControlName="id" disabled>
+        <input matInput formControlName="id" [disabled] = "true">
     </mat-form-field>
 
     <mat-form-field appearance="fill">
@@ -39,7 +39,7 @@
         <input matInput id="contact" name="contact" ngModel required>
     </mat-form-field>
 
-    <button mat-button type="submit" [disabled]="!registerForm.valid">Update Account</button>
+    <button mat-button type="submit" [disabled]="!accountForm.valid">Update Account</button>
 
 
 </form>

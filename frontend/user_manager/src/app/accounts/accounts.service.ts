@@ -15,6 +15,9 @@ export class AccountsService {
 
   private getAccountUrl = "http://localhost:8080/api/getAccount";
 
+  private updateUrl = "http://localhost:8080/api/updateAccount";
+
+
   constructor(private http:HttpClient) { }
 
   
@@ -27,8 +30,13 @@ export class AccountsService {
   }
 
   getAccount(accountId:number): Observable<UserManagerResponse<Account>> {
-    const url = "${this.getAccountUrl}/${accountId}";
+    const url = `${this.getAccountUrl}/${accountId}`; 
     return this.http.get<UserManagerResponse<Account>>(url);
+  }
+  
+
+  updateAccount(account:Account) : Observable<UserManagerResponse<Account>> {
+    return this.http.post<UserManagerResponse<Account>> (this.updateUrl,account);
   }
    
 }

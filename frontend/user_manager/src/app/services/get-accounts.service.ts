@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable, Subscription } from 'rxjs';
+import { BehaviorSubject, Observable, Subscription , throwError } from 'rxjs';
 import { Account } from '../accounts/Account';
 import { AccountsService } from '../accounts/accounts.service';
 import { UserManagerResponse } from '../model/UserManagerResponse';
+import { map, catchError } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -54,24 +55,40 @@ export class GetAccountsService {
     this.subscriptions.push(deleteSub);
   }
 
-  public getSingleAccount(accountId:number): void {
-    const getSingleAccountSub = this.accountsService.getAccount(accountId).subscribe(
-      (result:UserManagerResponse<Account>) => {
-        if(result.success){
-          console.log("Dohvacen je nalog sa ID-em " + accountId,result.items);
+  public getSingleAccount(accountId: number): Observable<Account> {
+    return this.accountsService.getAccount(accountId).pipe(
+      map((result: UserManagerResponse<Account>) => {
+        if (result.success && result.items.length > 0) {
+          return result.items[0]; // vraća prvi element u nizu
+        } else {
+          throw new Error("Greška prilikom dohvatanja naloga");
         }
-        else{
-          console.error("Greska prilikom dohvatanja naloga");
+      }),
+      catchError((error) => {
+        console.error("Greška prilikom dohvatanja jednog naloga:", error);
+        return throwError(error);
+      })
+    );
+  }
+  
+
+  public updateAccount(account: Account): void {
+    const updateSub = this.accountsService.updateAccount(account).subscribe(
+      (result: UserManagerResponse<Account>) => {
+        if (result.success) {
+          console.log("Nalog je uspešno ažuriran:", result.items);
+          this.getAllAccounts(); 
+        } else {
+          console.error("Greška prilikom ažuriranja naloga.");
         }
       },
       (error) => {
-        console.error("Greska prilikom dohvatanja jednog naloga",error);
+        console.error("Greška prilikom ažuriranja naloga:", error);
       }
-      );
-    
-    this.subscriptions.push(getSingleAccountSub);
-    
+    );
+    this.subscriptions.push(updateSub);
   }
+  
 
   
   public unsubscribeAll(): void {

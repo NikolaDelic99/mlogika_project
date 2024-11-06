@@ -26,6 +26,8 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { UpdateAccountComponent } from './update-account/update-account.component';
 
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +49,8 @@ import { UpdateAccountComponent } from './update-account/update-account.componen
     MatTableModule,
     MatToolbarModule,
     MatIconModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    ReactiveFormsModule
   ],
   providers: [RegisterService,Register2Service],
   bootstrap: [AppComponent]
