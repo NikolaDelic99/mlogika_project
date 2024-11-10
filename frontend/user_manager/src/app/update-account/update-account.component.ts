@@ -15,9 +15,19 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 export class UpdateAccountComponent implements AfterViewInit{
   
   
-  accountForm!:FormGroup;
+  accountForm:FormGroup;
 
-  constructor(private route:ActivatedRoute, private getAccountsService:GetAccountsService,private fb:FormBuilder){}
+  constructor(private route:ActivatedRoute, private getAccountsService:GetAccountsService,private fb:FormBuilder){
+    this.accountForm=this.fb.group({
+      id : [{value : "", readonly:true},Validators.required],
+      firstname: ["",Validators.required],
+      lastname: ["",Validators.required],
+      username: ["",Validators.required],
+      password: ["",Validators.required],
+      contact_type: ["",Validators.required],
+      contact_contact: ["",Validators.required]
+    });
+  }
 
   
   
@@ -29,14 +39,7 @@ export class UpdateAccountComponent implements AfterViewInit{
   ngAfterViewInit(): void {
     const accountId = this.route.snapshot.paramMap.get('id');
     
-    this.accountForm  = this.fb.group({
-      id: [''],
-      firstname: ['', Validators.required],
-      lastname: ['', Validators.required],
-      username: ['', Validators.required],
-      contact_type: ['', Validators.required],
-      contact_contact: ['', Validators.required]
-    });
+    
 
     if (accountId) {
       
