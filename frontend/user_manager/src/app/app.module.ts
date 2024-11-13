@@ -27,6 +27,7 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { UpdateAccountComponent } from './update-account/update-account.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     RegisterComponent,
     Register2Component,
     AccountsComponent,
-    UpdateAccountComponent
+    UpdateAccountComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

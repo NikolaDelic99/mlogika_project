@@ -4,9 +4,11 @@ import { RegisterComponent } from './register/register.component';
 import { Register2Component } from './register2/register2.component';
 import { AccountsComponent } from './accounts/accounts.component';
 import { UpdateAccountComponent } from './update-account/update-account.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path:"", redirectTo:"/home", pathMatch:"full"},
+  { path:"", component:HomeComponent},
+  { path:"home", component:HomeComponent},
   { path:"register", component:RegisterComponent},
   { path:"register2", component:Register2Component},
   { path:"accounts", component:AccountsComponent},
