@@ -65,6 +65,6 @@ export class AccountsComponent implements AfterViewInit, OnDestroy {
 
   onUpdateClick(accountId:number): void {
     const url = this.router.createUrlTree(['/updateaccount', accountId]).toString();
-    this.location.go(url);
+    this.router.navigate([url]);
   }
 }
