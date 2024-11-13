@@ -3,6 +3,8 @@ import { NgForm } from '@angular/forms';
 import { Register2Service } from './register2.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HttpHeaders } from '@angular/common/http';
+import { Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-register2',
@@ -13,7 +15,7 @@ export class Register2Component {
 
   registerForm:FormGroup;
   
-  constructor(private fb:FormBuilder,private registerService:Register2Service) {
+  constructor(private fb:FormBuilder,private registerService:Register2Service,private router:Router) {
     this.registerForm = this.fb.group({
       firstname: ['', Validators.required],
       lastname: ['', Validators.required],
@@ -33,6 +35,7 @@ export class Register2Component {
       this.registerService.registerUser(newUser).subscribe(
         response => {
           console.log('User registered:', response);
+          this.router.navigate(["/accounts"]);
         },
         error => {
           console.error('Error registering user:', error);

@@ -6,6 +6,8 @@ import { GetAccountsService } from '../services/get-accounts.service';
 import { AccountsService } from '../accounts/accounts.service';
 import { Account } from '../accounts/Account';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-update-account',
@@ -17,7 +19,7 @@ export class UpdateAccountComponent implements AfterViewInit{
   
   accountForm:FormGroup;
 
-  constructor(private route:ActivatedRoute, private getAccountsService:GetAccountsService,private fb:FormBuilder){
+  constructor(private route:ActivatedRoute, private getAccountsService:GetAccountsService,private fb:FormBuilder,private router:Router){
     this.accountForm=this.fb.group({
       id : [{value : "", readonly:true},Validators.required],
       firstname: ["",Validators.required],
@@ -58,6 +60,7 @@ export class UpdateAccountComponent implements AfterViewInit{
     if (this.accountForm?.valid) {
       
       this.getAccountsService.updateAccount(this.accountForm.value);
+      this.router.navigate(["/accounts"]);
     }
   }
   }
