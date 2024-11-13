@@ -29,6 +29,8 @@ import { UpdateAccountComponent } from './update-account/update-account.componen
 import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 
+import { MatMenuModule } from "@angular/material/menu";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +54,8 @@ import { HomeComponent } from './home/home.component';
     MatToolbarModule,
     MatIconModule,
     MatSnackBarModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatMenuModule
   ],
   providers: [RegisterService,Register2Service],
   bootstrap: [AppComponent]

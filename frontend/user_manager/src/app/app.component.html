@@ -1,10 +1,12 @@
 <nav>
-    <ul>
-        <li><a routerLink="/">Home</a></li>
-        <li><a routerLink="/register">Register</a></li>
-        <li><a routerLink="/register2">Register2</a></li>
-        <li><a routerLink="/accounts">Accounts</a></li>
-    </ul>
+    <button mat-button [routerLink]="['/home']">Home</button>
+    <button mat-button [matMenuTriggerFor]="accountsMenu">Accounts</button>
+
+    <mat-menu #accountsMenu="matMenu">
+        <button mat-menu-item [routerLink]="['/accounts']">Accounts</button>
+        <button mat-menu-item [routerLink]="['/register']">Register</button>
+        <button mat-menu-item [routerLink]="['/register2']">Register2</button>
+    </mat-menu>
 </nav>
 
 <router-outlet></router-outlet>
