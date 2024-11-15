@@ -30,6 +30,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 
 import { MatMenuModule } from "@angular/material/menu";
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { MatMenuModule } from "@angular/material/menu";
     Register2Component,
     AccountsComponent,
     UpdateAccountComponent,
-    HomeComponent
+    HomeComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
