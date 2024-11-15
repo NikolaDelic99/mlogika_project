@@ -61,6 +61,7 @@ export class UpdateAccountComponent implements AfterViewInit{
       
       this.getAccountsService.updateAccount(this.accountForm.value);
       this.router.navigate(["/accounts"]);
+      this.getAccountsService.getAllAccounts();
     }
   }
   }
