@@ -14,11 +14,15 @@
     <table mat-table [dataSource]="contacts" class="mat-elevation-z8">
       <ng-container matColumnDef="type">
         <th mat-header-cell *matHeaderCellDef>Type</th>
-        <td mat-cell *matCellDef="let contact">{{ contact.contact_type }}</td>
+        <td mat-cell *matCellDef="let contact">{{ contact.type }}</td>
       </ng-container>
       <ng-container matColumnDef="contact">
         <th mat-header-cell *matHeaderCellDef>Contact</th>
-        <td mat-cell *matCellDef="let contact">{{ contact.contact_contact }}</td>
+        <td mat-cell *matCellDef="let contact">{{ contact.contact }}</td>
+      </ng-container>
+      <ng-container matColumnDef="primary_contact">
+        <th mat-header-cell *matHeaderCellDef> Primary Contact </th>
+        <td mat-cell *matCellDef="let contact"> {{contact.primary_contact}} </td>
       </ng-container>
       
   

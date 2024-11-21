@@ -1,6 +1,6 @@
 export interface Contact {
     id:number;
-    contact_type:string;
-    contact_contact:string;
-    is_primary:boolean;
+    type:string;
+    contact:string;
+    primary_contact:boolean;
 }

@@ -13,7 +13,7 @@ export class ContactsComponent {
 
   accounts:Account [] = [];
   contacts:Contact[] = [];
-  displayedColumns: string[] = ['type', 'contact'];
+  displayedColumns: string[] = ['type', 'contact','primary_contact'];
   subscriptions:Subscription [] = [];
 
   constructor(private accountService:AccountsService,private getContactService:GetContactsService){}
