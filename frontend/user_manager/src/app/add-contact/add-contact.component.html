@@ -1,0 +1,33 @@
+<form (ngSubmit)="onSubmit(registerForm)" #registerForm="ngForm">
+    <mat-form-field appearance="fill">
+        <mat-label>Account Id</mat-label>
+        <input matInput id="account_id" name="account_id" ngModel required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Contact type</mat-label>
+        <mat-select id="type" name="type" ngModel required>
+            <mat-option value="phone">Phone</mat-option>
+            <mat-option value="email">Email</mat-option>
+            <mat-option value="address">Address</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Contact</mat-label>
+        <input matInput id="contact" name="contact" ngModel required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Primary Contact</mat-label>
+        <input matInput id="primary_contact" name="primary_contact" ngModel required>
+    </mat-form-field>
+
+    
+
+    
+
+    <button mat-button type="submit" [disabled]="!registerForm.valid">Register Contact</button>
+
+
+</form>

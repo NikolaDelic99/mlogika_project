@@ -4,6 +4,8 @@ import { GetContactsService } from '../services/get-contacts.service';
 import { Account } from '../accounts/Account';
 import { Subscription } from 'rxjs';
 import { Contact } from './Contact';
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-contacts',
   templateUrl: './contacts.component.html',
@@ -16,7 +18,7 @@ export class ContactsComponent {
   displayedColumns: string[] = ['type', 'contact','primary_contact'];
   subscriptions:Subscription [] = [];
 
-  constructor(private accountService:AccountsService,private getContactService:GetContactsService){}
+  constructor(private accountService:AccountsService,private getContactService:GetContactsService,private router:Router){}
 
   ngAfterViewInit() : void {
     const accountsSub = this.accountService.getAccounts().subscribe(
@@ -53,6 +55,16 @@ export class ContactsComponent {
       );
       this.subscriptions.push(contactsSub);
 
+}
+
+navigateToAddContact() {
+  const accountId = this.contacts[0]?.id;
+  if(!accountId){
+    console.log("Nalog nije izabran!");
+    return;
+  }
+  const url = this.router.createUrlTree(['/add-contact', accountId]).toString();
+  this.router.navigate([url]);
 }
 
 ngOnDestroy() {

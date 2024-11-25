@@ -31,6 +31,7 @@ import { HomeComponent } from './home/home.component';
 
 import { MatMenuModule } from "@angular/material/menu";
 import { ContactsComponent } from './contacts/contacts.component';
+import { AddContactComponent } from './add-contact/add-contact.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ContactsComponent } from './contacts/contacts.component';
     AccountsComponent,
     UpdateAccountComponent,
     HomeComponent,
-    ContactsComponent
+    ContactsComponent,
+    AddContactComponent
   ],
   imports: [
     BrowserModule,

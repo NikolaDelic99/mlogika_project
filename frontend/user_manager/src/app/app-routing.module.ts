@@ -6,6 +6,7 @@ import { AccountsComponent } from './accounts/accounts.component';
 import { UpdateAccountComponent } from './update-account/update-account.component';
 import { HomeComponent } from './home/home.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { AddContactComponent } from './add-contact/add-contact.component';
 
 const routes: Routes = [
   { path:"home", component:HomeComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path:"accounts", component:AccountsComponent},
   { path:"updateaccount/:id", component:UpdateAccountComponent},
   { path:"contacts", component:ContactsComponent},
+  { path:"add-contact/:account_id", component:AddContactComponent},
   { path: '**', redirectTo: '/home', pathMatch: 'full' }
 ];
 
