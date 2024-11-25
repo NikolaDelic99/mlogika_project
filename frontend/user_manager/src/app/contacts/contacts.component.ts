@@ -5,6 +5,8 @@ import { Account } from '../accounts/Account';
 import { Subscription } from 'rxjs';
 import { Contact } from './Contact';
 import { Router } from '@angular/router';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { DeleteContactService } from '../services/delete-contact.service';
 
 @Component({
   selector: 'app-contacts',
@@ -15,10 +17,10 @@ export class ContactsComponent {
 
   accounts:Account [] = [];
   contacts:Contact[] = [];
-  displayedColumns: string[] = ['type', 'contact','primary_contact'];
+  displayedColumns: string[] = ['delete','type', 'contact','primary_contact'];
   subscriptions:Subscription [] = [];
 
-  constructor(private accountService:AccountsService,private getContactService:GetContactsService,private router:Router){}
+  constructor(private accountService:AccountsService,private getContactService:GetContactsService,private router:Router,private snackBar: MatSnackBar,private deleteContactService:DeleteContactService){}
 
   ngAfterViewInit() : void {
     const accountsSub = this.accountService.getAccounts().subscribe(
@@ -66,6 +68,29 @@ navigateToAddContact() {
   const url = this.router.createUrlTree(['/add-contact', accountId]).toString();
   this.router.navigate([url]);
 }
+
+onDelete(accountId: number): void {
+  const snackBarRef = this.snackBar.open("Are you sure?", "OK", {
+    duration: 5000,
+    panelClass: ["custom-snackbar"],
+  });
+
+  snackBarRef.onAction().subscribe(() => {
+    console.log("ID = ",accountId);
+    const deleteSub = this.deleteContactService.deleteContact(accountId).subscribe(
+      () => {
+        console.log(`Kontakt sa ID-jem ${accountId} je obrisan.`);
+         
+      },
+      (error) => {
+        console.error("Greška prilikom brisanja kontakta:", error);
+      }
+    );
+    this.subscriptions.push(deleteSub);
+  });
+}
+
+ 
 
 ngOnDestroy() {
   this.subscriptions.forEach((sub) => sub.unsubscribe());
