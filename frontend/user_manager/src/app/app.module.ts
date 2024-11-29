@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -33,6 +33,19 @@ import { MatMenuModule } from "@angular/material/menu";
 import { ContactsComponent } from './contacts/contacts.component';
 import { AddContactComponent } from './add-contact/add-contact.component';
 
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { LangSwitcherComponent } from './lang-switcher/lang-switcher.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
+
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
+
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/');
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +55,8 @@ import { AddContactComponent } from './add-contact/add-contact.component';
     UpdateAccountComponent,
     HomeComponent,
     ContactsComponent,
-    AddContactComponent
+    AddContactComponent,
+    LangSwitcherComponent
   ],
   imports: [
     BrowserModule,
@@ -59,9 +73,19 @@ import { AddContactComponent } from './add-contact/add-contact.component';
     MatIconModule,
     MatSnackBarModule,
     ReactiveFormsModule,
-    MatMenuModule
+    MatMenuModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    }),
+    MatTooltipModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
-  providers: [RegisterService,Register2Service],
+  providers: [RegisterService,Register2Service,{ provide: MAT_DATE_LOCALE, useValue: 'en-GB' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

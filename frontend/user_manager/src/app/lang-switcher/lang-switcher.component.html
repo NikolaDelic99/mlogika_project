@@ -1,0 +1,22 @@
+<mat-select class="lang-select" [attr.role]="'combobox'" hideSingleSelectionIndicator panelClass="lang-select-popup" [value]="currentLanguage" disableRipple>
+    <mat-select-trigger class="mat-select-arrow-wrapper">
+      <mat-icon [attr.role]="'textbox'" [ngClass]="currentLanguage == 'en' ? 'flag-icon flag-icon-gb' : (currentLanguage == 'ur' ? 'flag-icon flag-icon-pk' : 'flag-icon flag-icon-rs')"></mat-icon>
+      <span>{{currentLanguage | translate}}</span>   
+    </mat-select-trigger>
+    <mat-option [attr.role]="'textbox'" value="en" (click)="switchLanguage('en')">
+                <mat-icon class="flag-icon flag-icon-gb"></mat-icon>
+                <span translate>en</span>
+        </mat-option>
+        <mat-option [attr.role]="'textbox'" value="sr-Latn" (click)="switchLanguage('sr-Latn')">
+                <mat-icon class="flag-icon flag-icon-rs"></mat-icon>
+                <span translate>sr-Latn</span>
+        </mat-option>
+        <mat-option [attr.role]="'textbox'" value="sr-Cyrl" (click)="switchLanguage('sr-Cyrl')">
+                <mat-icon class="flag-icon flag-icon-rs"></mat-icon>
+                <span translate>sr-Cyrl</span>
+        </mat-option>
+        <mat-option [attr.role]="'textbox'" value="ur" (click)="switchLanguage('ur')">
+                <mat-icon class="flag-icon flag-icon-pk"></mat-icon>
+                <span translate>ur</span>
+        </mat-option>
+</mat-select>

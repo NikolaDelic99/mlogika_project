@@ -1,0 +1,33 @@
+.lang-switcher {
+    width: 100%;
+    font-size: 12px;
+    margin-left: 4px;
+    height: 30px;
+}
+.lang-select, .lang-select-popup .mat-mdc-option {
+font-size: 12px;
+}
+.lang-select .mat-select-arrow-wrapper {
+    display: flex;
+    padding-right: 6px;
+}
+.lang-select .mat-mdc-select-arrow-wrapper {
+padding-bottom: 6px;
+padding-right: 16px;
+}
+.lang-select .mat-icon {
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+.flag-icon-gb {
+background-image: url(/assets/flags/4x3/gb.svg);
+}
+
+.flag-icon-pk {
+background-image: url(/assets/flags/4x3/pk.svg);
+}
+
+.flag-icon-rs {
+background-image: url(/assets/flags/4x3/rs.svg);
+}

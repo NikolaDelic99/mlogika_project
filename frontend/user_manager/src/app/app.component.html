@@ -9,6 +9,8 @@
     </mat-menu>
 
     <button mat-button [routerLink]="['/contacts']">Contacts</button>
+
+    <app-lang-switcher class="lang-switcher" matTooltip="{{'language_switcher' | translate}}"></app-lang-switcher> 
 </nav>
 
 <router-outlet></router-outlet>

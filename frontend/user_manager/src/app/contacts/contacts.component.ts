@@ -80,6 +80,7 @@ onDelete(accountId: number): void {
     const deleteSub = this.deleteContactService.deleteContact(accountId).subscribe(
       () => {
         console.log(`Kontakt sa ID-jem ${accountId} je obrisan.`);
+        
          
       },
       (error) => {
