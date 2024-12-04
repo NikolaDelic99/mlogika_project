@@ -15,27 +15,27 @@
         </ng-container>
 
         <ng-container matColumnDef="firstname">
-            <th mat-header-cell *matHeaderCellDef> First Name </th>
+            <th mat-header-cell *matHeaderCellDef> {{'firstname' | translate}} </th>
             <td mat-cell *matCellDef="let account"> {{account.firstname}} </td>
         </ng-container>
 
         <ng-container matColumnDef="lastname">
-            <th mat-header-cell *matHeaderCellDef> Last Name </th>
+            <th mat-header-cell *matHeaderCellDef> {{'lastname' | translate}} </th>
             <td mat-cell *matCellDef="let account"> {{account.lastname}} </td>
         </ng-container>
 
         <ng-container matColumnDef="username">
-            <th mat-header-cell *matHeaderCellDef> Username </th>
+            <th mat-header-cell *matHeaderCellDef> {{'username' | translate}} </th>
             <td mat-cell *matCellDef="let account"> {{account.username}} </td>
         </ng-container>
 
         <ng-container matColumnDef="contact_type">
-            <th mat-header-cell *matHeaderCellDef> Contact Type </th>
+            <th mat-header-cell *matHeaderCellDef> {{'contact_type' | translate}} </th>
             <td mat-cell *matCellDef="let account"> {{account.contact_type}} </td>
         </ng-container>
 
         <ng-container matColumnDef="contact_contact">
-            <th mat-header-cell *matHeaderCellDef> Contact </th>
+            <th mat-header-cell *matHeaderCellDef> {{'contact' | translate}} </th>
             <td mat-cell *matCellDef="let account"> {{account.contact_contact}} </td>
         </ng-container>
 
@@ -44,10 +44,10 @@
         
 
         <tr class="mat-row" *matNoDataRow>
-            <td class="mat-cell" colspan="6">Nema podataka koji odgovaraju.</td>
+            <td class="mat-cell" colspan="6">{{'no_matching_data' | translate}}</td>
         </tr>
 
         <tr mat-row *matRowDef="let row; columns:showedColumns;" (click) = "onUpdateClick(row.id)"></tr>
     </table>
-    <button (click)="refreshAccounts()">Refresh</button>
+    <button (click)="refreshAccounts()">{{'refresh' | translate}}</button>
 </div>

@@ -6,40 +6,40 @@
     </mat-form-field>
 
     <mat-form-field appearance="fill">
-        <mat-label>First name</mat-label>
+        <mat-label>{{'firstname' | translate}}</mat-label>
         <input matInput formControlName="firstname">
     </mat-form-field>
 
     <mat-form-field appearance="fill">
-        <mat-label>Last name</mat-label>
+        <mat-label>{{'lastname' | translate}}</mat-label>
         <input matInput formControlName="lastname">
     </mat-form-field>
 
     <mat-form-field appearance="fill">
-        <mat-label>Username</mat-label>
+        <mat-label>{{'username' | translate}}</mat-label>
         <input matInput formControlName="username">
     </mat-form-field>
 
     <mat-form-field appearance="fill">
-        <mat-label>Password</mat-label>
+        <mat-label>{{'password' | translate}}</mat-label>
         <input matInput formControlName="password" type="password">
     </mat-form-field>
 
     <mat-form-field appearance="fill">
-        <mat-label>Contact type</mat-label>
+        <mat-label>{{'contact_type' | translate}}</mat-label>
         <mat-select formControlName="contact_type">
-            <mat-option value="phone">Phone</mat-option>
-            <mat-option value="email">Email</mat-option>
-            <mat-option value="address">Address</mat-option>
+            <mat-option value="phone">{{'phone' | translate}}</mat-option>
+            <mat-option value="email">{{'email' | translate}}</mat-option>
+            <mat-option value="address">{{'address' | translate}}</mat-option>
         </mat-select>
     </mat-form-field>
 
     <mat-form-field appearance="fill">
-        <mat-label>Contact</mat-label>
+        <mat-label>{{'contact' | translate}}</mat-label>
         <input matInput formControlName="contact_contact">
     </mat-form-field>
 
-    <button mat-button type="submit" [disabled]="!accountForm.valid">Update Account</button>
+    <button mat-button type="submit" [disabled]="!accountForm.valid">{{'update_account' | translate}}</button>
 
 
 </form>

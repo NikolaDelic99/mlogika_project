@@ -1,38 +1,38 @@
 <form (ngSubmit)="onSubmit(registerForm)" #registerForm="ngForm">
     <div>
-        <label for="firstname">First name:</label>
+        <label for="firstname">{{'firstname:' | translate}}</label>
         <input type="text" id="firstname" name="firstname" ngModel required>
     </div>
 
     <div>
-        <label for="lastname">Last name:</label>
+        <label for="lastname">{{'lastname:' | translate}}</label>
         <input type="text" id="lastname" name="lastname" ngModel required>
     </div>
 
     <div>
-        <label for="username">Username:</label>
+        <label for="username">{{'username:' | translate}}</label>
         <input type="text" id="username" name="username" ngModel required>
     </div>
 
     <div>
-        <label for="password">Password:</label>
+        <label for="password">{{'password:' | translate}}</label>
         <input type="password" id="password" name="password" ngModel required>
     </div>
 
     <div>
-        <label for="contactType">Contact type:</label>
+        <label for="contactType">{{'contact_type' | translate}}</label>
         <select id="contactType" name="contactType" ngModel required>
-            <option value="phone">Phone</option>
-            <option value="email">Email</option>
-            <option value="address">Address</option>
+            <option value="phone">{{'phone' | translate}}</option>
+            <option value="email">{{'email' | translate}}</option>
+            <option value="address">{{'address' | translate}}</option>
         </select>
     </div>
 
     <div>
-        <label for="contact">Contact:</label>
+        <label for="contact">{{'contact' | translate}}</label>
         <input type="text" id="contact" name="contact" ngModel required>
     </div>
 
-    <button type="submit" [disabled]="!registerForm.valid">Register</button>
+    <button type="submit" [disabled]="!registerForm.valid">{{'register' | translate}}</button>
 
 </form>
