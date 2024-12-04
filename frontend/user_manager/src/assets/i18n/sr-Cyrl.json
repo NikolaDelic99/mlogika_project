@@ -1,4 +1,8 @@
 {
     "home"              : "Home",
-    "language_switcher" : "Језик"
+    "language_switcher" : "Језик",
+    "en": "Енглески",
+    "sr-Cyrl": "Ћирилица",
+    "sr-Latn": "Латиница",
+    "ur": "Урду"
   }

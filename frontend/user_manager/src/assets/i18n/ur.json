@@ -1,4 +1,8 @@
 {
     "home"              : "Home",
-    "language_switcher" : "زبان بدلنے والا"
+    "language_switcher" : "زبان بدلنے والا",
+    "en": "انگریزی",
+    "sr-Cyrl": "سیریلک",
+    "sr-Latn": "لاطینی",
+    "ur": "اردو"
   }
