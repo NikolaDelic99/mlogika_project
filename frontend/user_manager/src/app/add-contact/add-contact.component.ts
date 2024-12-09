@@ -16,16 +16,22 @@ export class AddContactComponent {
 
   registerForm:FormGroup;
 
+  accountId = this.route.snapshot.paramMap.get('account_id') || '';
+  
+
+ 
+
   constructor(private fb:FormBuilder,private addContactService:AddContactService,private router:Router,private route:ActivatedRoute) {
+    console.log(this.accountId);
     this.registerForm = this.fb.group({
-      account_id: [{value : "", readonly:true},Validators.required],
+      account_id: [this.accountId || '',Validators.required],
       type: ['', Validators.required],
       contact: ['', [Validators.required]],
       primary_contact: ['', [Validators.required]]
     });
   }
 
-  onSubmit(f:NgForm){
+  onSubmit(f:FormGroup){
     if (f.valid) {
       const newContact = {
         account_id: Number(f.value.account_id),
