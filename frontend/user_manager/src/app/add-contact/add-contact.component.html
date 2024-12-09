@@ -1,7 +1,7 @@
 <form (ngSubmit)="onSubmit(registerForm)" #registerForm="ngForm">
     <mat-form-field appearance="fill">
         <mat-label>{{'account_id' | translate}}</mat-label>
-        <input matInput id="account_id" name="account_id" ngModel required>
+        <input matInput id="account_id" name="account_id" ngModel required [readonly]="true">
     </mat-form-field>
 
     <mat-form-field appearance="fill">
