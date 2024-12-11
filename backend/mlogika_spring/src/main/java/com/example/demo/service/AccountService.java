@@ -152,7 +152,7 @@ public class AccountService {
 
     public ResponseEntity<Map<String, Object>> getContacts(int accountId) {
         try {
-            String sql = "SELECT id,type, contact, primary_contact FROM Contact WHERE account_id = ?";
+            String sql = "SELECT id,account_id,type, contact, primary_contact FROM Contact WHERE account_id = ?";
             List<Map<String, Object>> contacts = jdbcTemplate.queryForList(sql, accountId);
             
             Map<String, Object> response = new HashMap<>();

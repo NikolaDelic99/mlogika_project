@@ -3,4 +3,5 @@ export interface Contact {
     type:string;
     contact:string;
     primary_contact:boolean;
+    account_id:number;
 }
