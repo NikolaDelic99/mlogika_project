@@ -60,7 +60,7 @@ export class ContactsComponent {
 }
 
 navigateToAddContact() {
-  const accountId = this.contacts[0]?.id;
+  const accountId = this.accounts[0]?.id;
   if(!accountId){
     console.log("Nalog nije izabran!");
     return;
