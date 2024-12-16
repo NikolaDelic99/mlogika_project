@@ -10,7 +10,8 @@ import { Location } from '@angular/common';
 @Component({
   selector: 'app-accounts',
   templateUrl: './accounts.component.html',
-  styleUrls: ['./accounts.component.css']
+  styleUrls: ['./accounts.component.css'],
+  standalone: false
 })
 export class AccountsComponent implements AfterViewInit, OnDestroy {
   

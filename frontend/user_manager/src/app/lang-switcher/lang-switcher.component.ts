@@ -6,7 +6,8 @@ import { MAT_SELECT_CONFIG } from '@angular/material/select';
 @Component({
   selector: 'app-lang-switcher',
   templateUrl: './lang-switcher.component.html',
-  styleUrls: ['./lang-switcher.component.css']
+  styleUrls: ['./lang-switcher.component.css'],
+  standalone: false
 })
 export class LangSwitcherComponent {
 

@@ -59,12 +59,15 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "buildTarget": "user_manager:build"
+          },
           "configurations": {
             "production": {
-              "browserTarget": "user_manager:build:production"
+              "buildTarget": "user_manager:build:production"
             },
             "development": {
-              "browserTarget": "user_manager:build:development"
+              "buildTarget": "user_manager:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "user_manager:build"
+            "buildTarget": "user_manager:build"
           }
         },
         "test": {
@@ -101,3 +104,4 @@
     "analytics": "1fe0af32-c43e-4463-a0ed-928da994c0e4"
   }
 }
+

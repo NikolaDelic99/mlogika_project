@@ -10,7 +10,8 @@ import { GetAccountsService } from '../services/get-accounts.service';
 @Component({
   selector: 'app-register2',
   templateUrl: './register2.component.html',
-  styleUrls: ['./register2.component.css']
+  styleUrls: ['./register2.component.css'],
+  standalone: false
 })
 export class Register2Component {
 

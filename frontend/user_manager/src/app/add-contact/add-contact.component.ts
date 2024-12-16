@@ -10,7 +10,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-add-contact',
   templateUrl: './add-contact.component.html',
-  styleUrls: ['./add-contact.component.css']
+  styleUrls: ['./add-contact.component.css'],
+  standalone: false
 })
 export class AddContactComponent {
 

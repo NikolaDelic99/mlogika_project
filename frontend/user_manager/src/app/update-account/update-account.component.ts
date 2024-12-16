@@ -12,7 +12,8 @@ import { Location } from '@angular/common';
 @Component({
   selector: 'app-update-account',
   templateUrl: './update-account.component.html',
-  styleUrls: ['./update-account.component.css']
+  styleUrls: ['./update-account.component.css'],
+  standalone: false
 })
 export class UpdateAccountComponent implements AfterViewInit{
   
