@@ -46,46 +46,4 @@ export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/');
 }
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    RegisterComponent,
-    Register2Component,
-    AccountsComponent,
-    UpdateAccountComponent,
-    HomeComponent,
-    ContactsComponent,
-    AddContactComponent,
-    LangSwitcherComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatSelectModule,
-    MatButtonModule,
-    MatTableModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatSnackBarModule,
-    ReactiveFormsModule,
-    MatMenuModule,
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
-    }),
-    MatTooltipModule,
-    MatDatepickerModule,
-    MatNativeDateModule
-  ],
-  providers: [RegisterService,Register2Service,{ provide: MAT_DATE_LOCALE, useValue: 'en-GB' }],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
+

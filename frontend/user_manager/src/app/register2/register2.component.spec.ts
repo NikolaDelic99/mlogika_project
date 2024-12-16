@@ -8,8 +8,8 @@ describe('Register2Component', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [Register2Component]
-    });
+    imports: [Register2Component]
+});
     fixture = TestBed.createComponent(Register2Component);
     component = fixture.componentInstance;
     fixture.detectChanges();

@@ -1,19 +1,25 @@
 import { Component , AfterViewInit} from '@angular/core';
 import { UpdateAccountService } from '../services/update-account.service';
 import { ActivatedRoute } from '@angular/router';
-import { NgForm } from '@angular/forms';
+import { NgForm, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { GetAccountsService } from '../services/get-accounts.service';
 import { AccountsService } from '../accounts/accounts.service';
 import { Account } from '../accounts/Account';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
+import { MatFormField, MatLabel } from '@angular/material/form-field';
+import { MatInput } from '@angular/material/input';
+import { MatSelect } from '@angular/material/select';
+import { MatOption } from '@angular/material/core';
+import { MatButton } from '@angular/material/button';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-update-account',
-  templateUrl: './update-account.component.html',
-  styleUrls: ['./update-account.component.css'],
-  standalone: false
+    selector: 'app-update-account',
+    templateUrl: './update-account.component.html',
+    styleUrls: ['./update-account.component.css'],
+    imports: [FormsModule, ReactiveFormsModule, MatFormField, MatLabel, MatInput, MatSelect, MatOption, MatButton, TranslatePipe]
 })
 export class UpdateAccountComponent implements AfterViewInit{
   

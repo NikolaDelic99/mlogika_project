@@ -8,8 +8,8 @@ describe('UpdateAccountComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [UpdateAccountComponent]
-    });
+    imports: [UpdateAccountComponent]
+});
     fixture = TestBed.createComponent(UpdateAccountComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

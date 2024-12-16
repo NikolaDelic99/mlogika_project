@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
-import { DateAdapter } from '@angular/material/core';
-import { MAT_SELECT_CONFIG } from '@angular/material/select';
+import { TranslateService, TranslateDirective, TranslatePipe } from '@ngx-translate/core';
+import { DateAdapter, MatOption } from '@angular/material/core';
+import { MAT_SELECT_CONFIG, MatSelect, MatSelectTrigger } from '@angular/material/select';
+import { MatIcon } from '@angular/material/icon';
+import { NgClass } from '@angular/common';
 
 @Component({
-  selector: 'app-lang-switcher',
-  templateUrl: './lang-switcher.component.html',
-  styleUrls: ['./lang-switcher.component.css'],
-  standalone: false
+    selector: 'app-lang-switcher',
+    templateUrl: './lang-switcher.component.html',
+    styleUrls: ['./lang-switcher.component.css'],
+    imports: [MatSelect, MatSelectTrigger, MatIcon, NgClass, MatOption, TranslateDirective, TranslatePipe]
 })
 export class LangSwitcherComponent {
 
