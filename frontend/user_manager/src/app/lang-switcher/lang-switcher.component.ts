@@ -1,30 +1,47 @@
 import { Component } from '@angular/core';
-import { TranslateService, TranslateDirective, TranslatePipe } from '@ngx-translate/core';
-import { DateAdapter, MatOption } from '@angular/material/core';
-import { MAT_SELECT_CONFIG, MatSelect, MatSelectTrigger } from '@angular/material/select';
-import { MatIcon } from '@angular/material/icon';
-import { NgClass } from '@angular/common';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import { DateAdapter } from '@angular/material/core';
+import { CommonModule } from '@angular/common';
+import { MAT_SELECT_CONFIG } from '@angular/material/select';
+import { MatSelectModule } from '@angular/material/select';
+import { MatOptionModule } from '@angular/material/core';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
-    selector: 'app-lang-switcher',
-    templateUrl: './lang-switcher.component.html',
-    styleUrls: ['./lang-switcher.component.css'],
-    imports: [MatSelect, MatSelectTrigger, MatIcon, NgClass, MatOption, TranslateDirective, TranslatePipe]
+  selector: 'app-lang-switcher',
+  standalone: true,
+  templateUrl: './lang-switcher.component.html',
+  styleUrls: ['./lang-switcher.component.css'],
+  imports: [
+    CommonModule,
+    MatSelectModule,
+    MatOptionModule,
+    MatIconModule,
+    TranslateModule, 
+  ],
+  providers: [
+    {
+      provide: MAT_SELECT_CONFIG,
+      useValue: { overlayPanelClass: 'lang-panel' },
+    },
+  ],
 })
 export class LangSwitcherComponent {
+  currentLanguage = 'en';
 
-  currentLanguage: string = 'en';
+  constructor(
+    private translate: TranslateService,
+    private dateAdapter: DateAdapter<any>
+  ) {
+    this.currentLanguage = this.translate.currentLang || 'en';
+  }
 
-        constructor(private translateService: TranslateService, private dateAdapter: DateAdapter<any>) {
-                translateService.setDefaultLang(this.currentLanguage);
-                translateService.use(this.currentLanguage);
-                this.dateAdapter.setLocale(this.currentLanguage);
-        }
-
-        switchLanguage(language: string) {
-                this.currentLanguage = language;
-                this.translateService.use(language);
-                this.dateAdapter.setLocale(language);
-        }
-
+  switchLanguage(lang: string) {
+    this.currentLanguage = lang;
+    this.translate.use(lang);
+    this.dateAdapter.setLocale(lang);
+  }
 }
+
+
+

@@ -20,7 +20,8 @@ import { TranslatePipe } from '@ngx-translate/core';
     selector: 'app-contacts',
     templateUrl: './contacts.component.html',
     styleUrls: ['./contacts.component.css'],
-    imports: [MatFormField, MatLabel, MatSelect, NgFor, MatOption, MatTable, MatColumnDef, MatHeaderCellDef, MatHeaderCell, MatCellDef, MatCell, MatIconButton, MatIcon, MatHeaderRowDef, MatHeaderRow, MatRowDef, MatRow, MatButton, TranslatePipe]
+    imports: [MatFormField, MatLabel, MatSelect, NgFor, MatOption, MatTable, MatColumnDef, MatHeaderCellDef, MatHeaderCell, MatCellDef, MatCell, MatIconButton, MatIcon, MatHeaderRowDef, MatHeaderRow, MatRowDef, MatRow, MatButton, TranslatePipe],
+    standalone: true
 })
 export class ContactsComponent {
 

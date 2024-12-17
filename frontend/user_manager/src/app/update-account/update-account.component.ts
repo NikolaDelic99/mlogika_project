@@ -19,7 +19,8 @@ import { TranslatePipe } from '@ngx-translate/core';
     selector: 'app-update-account',
     templateUrl: './update-account.component.html',
     styleUrls: ['./update-account.component.css'],
-    imports: [FormsModule, ReactiveFormsModule, MatFormField, MatLabel, MatInput, MatSelect, MatOption, MatButton, TranslatePipe]
+    imports: [FormsModule, ReactiveFormsModule, MatFormField, MatLabel, MatInput, MatSelect, MatOption, MatButton, TranslatePipe],
+    standalone: true
 })
 export class UpdateAccountComponent implements AfterViewInit{
   

@@ -13,7 +13,8 @@ import { TranslatePipe } from '@ngx-translate/core';
     selector: 'app-register',
     templateUrl: './register.component.html',
     styleUrls: ['./register.component.css'],
-    imports: [FormsModule, TranslatePipe]
+    imports: [FormsModule, TranslatePipe],
+    standalone: true
 })
 export class RegisterComponent {
 

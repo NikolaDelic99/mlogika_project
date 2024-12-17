@@ -15,6 +15,7 @@ import { TranslatePipe } from '@ngx-translate/core';
     templateUrl: './accounts.component.html',
     styleUrls: ['./accounts.component.css'],
     imports: [MatTable, MatColumnDef, MatHeaderCellDef, MatHeaderCell, MatCellDef, MatCell, MatIconButton, MatIcon, MatHeaderRowDef, MatHeaderRow, MatNoDataRow, MatRowDef, MatRow, TranslatePipe],
+    standalone: true
 })
 export class AccountsComponent implements AfterViewInit, OnDestroy {
   

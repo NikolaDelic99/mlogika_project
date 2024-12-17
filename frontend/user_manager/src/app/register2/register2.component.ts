@@ -17,7 +17,8 @@ import { TranslatePipe } from '@ngx-translate/core';
     selector: 'app-register2',
     templateUrl: './register2.component.html',
     styleUrls: ['./register2.component.css'],
-    imports: [FormsModule, MatFormField, MatLabel, MatInput, MatSelect, MatOption, MatButton, TranslatePipe]
+    imports: [FormsModule, MatFormField, MatLabel, MatInput, MatSelect, MatOption, MatButton, TranslatePipe],
+    standalone: true
 })
 export class Register2Component {
 

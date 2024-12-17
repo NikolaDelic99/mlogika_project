@@ -17,6 +17,7 @@ import { TranslatePipe } from '@ngx-translate/core';
     selector: 'app-add-contact',
     templateUrl: './add-contact.component.html',
     styleUrls: ['./add-contact.component.css'],
+    standalone: true,
     imports: [FormsModule, ReactiveFormsModule, MatFormField, MatLabel, MatInput, MatSelect, MatOption, MatButton, TranslatePipe]
 })
 export class AddContactComponent {
