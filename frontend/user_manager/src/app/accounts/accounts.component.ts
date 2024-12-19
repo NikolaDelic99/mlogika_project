@@ -1,20 +1,19 @@
 import { Component, AfterViewInit, ChangeDetectorRef, OnDestroy } from '@angular/core';
 import { Account } from './Account';
-import { MatTableDataSource, MatTable, MatColumnDef, MatHeaderCellDef, MatHeaderCell, MatCellDef, MatCell, MatHeaderRowDef, MatHeaderRow, MatNoDataRow, MatRowDef, MatRow } from '@angular/material/table';
 import { GetAccountsService } from '../services/get-accounts.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Subscription } from 'rxjs';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
-import { MatIconButton } from '@angular/material/button';
-import { MatIcon } from '@angular/material/icon';
-import { TranslatePipe } from '@ngx-translate/core';
+import { SharedModule } from 'src/app/shared/shared.module';
+import { MatTableDataSource } from '@angular/material/table';
+
 
 @Component({
     selector: 'app-accounts',
     templateUrl: './accounts.component.html',
     styleUrls: ['./accounts.component.css'],
-    imports: [MatTable, MatColumnDef, MatHeaderCellDef, MatHeaderCell, MatCellDef, MatCell, MatIconButton, MatIcon, MatHeaderRowDef, MatHeaderRow, MatNoDataRow, MatRowDef, MatRow, TranslatePipe],
+    imports: [SharedModule],
     standalone: true
 })
 export class AccountsComponent implements AfterViewInit, OnDestroy {

@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
-import { TranslateService, TranslateModule } from '@ngx-translate/core';
-import { DateAdapter } from '@angular/material/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { DateAdapter, MatOptionModule } from '@angular/material/core';
+import { MAT_SELECT_CONFIG, MatSelectModule } from '@angular/material/select';
 import { CommonModule } from '@angular/common';
-import { MAT_SELECT_CONFIG } from '@angular/material/select';
-import { MatSelectModule } from '@angular/material/select';
-import { MatOptionModule } from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
@@ -17,7 +15,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatSelectModule,
     MatOptionModule,
     MatIconModule,
-    TranslateModule, 
+    TranslateModule,
   ],
   providers: [
     {

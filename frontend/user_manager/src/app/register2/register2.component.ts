@@ -1,23 +1,16 @@
 import { Component } from '@angular/core';
-import { NgForm, FormsModule } from '@angular/forms';
+import { NgForm} from '@angular/forms';
 import { Register2Service } from './register2.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { HttpHeaders } from '@angular/common/http';
 import { Router } from '@angular/router';
-import { Location } from '@angular/common';
 import { GetAccountsService } from '../services/get-accounts.service';
-import { MatFormField, MatLabel } from '@angular/material/form-field';
-import { MatInput } from '@angular/material/input';
-import { MatSelect } from '@angular/material/select';
-import { MatOption } from '@angular/material/core';
-import { MatButton } from '@angular/material/button';
-import { TranslatePipe } from '@ngx-translate/core';
+import { SharedModule } from '../shared/shared.module';
 
 @Component({
     selector: 'app-register2',
     templateUrl: './register2.component.html',
     styleUrls: ['./register2.component.css'],
-    imports: [FormsModule, MatFormField, MatLabel, MatInput, MatSelect, MatOption, MatButton, TranslatePipe],
+    imports: [SharedModule],
     standalone: true
 })
 export class Register2Component {

@@ -1,24 +1,16 @@
 import { Component } from '@angular/core';
-import { NgForm, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { HttpHeaders } from '@angular/common/http';
-import { Location } from '@angular/common';
 import { AddContactService } from '../services/add-contact.service';
 import { ActivatedRoute } from '@angular/router';
-import { MatFormField, MatLabel } from '@angular/material/form-field';
-import { MatInput } from '@angular/material/input';
-import { MatSelect } from '@angular/material/select';
-import { MatOption } from '@angular/material/core';
-import { MatButton } from '@angular/material/button';
-import { TranslatePipe } from '@ngx-translate/core';
+import { SharedModule } from '../shared/shared.module';
 
 @Component({
     selector: 'app-add-contact',
     templateUrl: './add-contact.component.html',
     styleUrls: ['./add-contact.component.css'],
     standalone: true,
-    imports: [FormsModule, ReactiveFormsModule, MatFormField, MatLabel, MatInput, MatSelect, MatOption, MatButton, TranslatePipe]
+    imports: [SharedModule]
 })
 export class AddContactComponent {
 

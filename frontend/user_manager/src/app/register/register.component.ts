@@ -1,19 +1,16 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { NgForm, FormsModule } from '@angular/forms';
+import { NgForm} from '@angular/forms';
 import { RegisterService } from './register.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { HttpHeaders } from '@angular/common/http';
 import { Router } from '@angular/router';
-import { Location } from '@angular/common';
 import { GetAccountsService } from '../services/get-accounts.service';
-import { TranslatePipe } from '@ngx-translate/core';
+import { SharedModule } from '../shared/shared.module';
 
 @Component({
     selector: 'app-register',
     templateUrl: './register.component.html',
     styleUrls: ['./register.component.css'],
-    imports: [FormsModule, TranslatePipe],
+    imports: [SharedModule],
     standalone: true
 })
 export class RegisterComponent {

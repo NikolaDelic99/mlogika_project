@@ -1,14 +1,14 @@
 <nav>
     <button mat-button [routerLink]="['/home']">Home</button>
-    <button mat-button [matMenuTriggerFor]="accountsMenu">{{'accounts' | translate}}</button>
+    <button mat-button [matMenuTriggerFor]="accountsMenu" *ngIf="modules.accounts">{{'accounts' | translate}}</button>
 
     <mat-menu #accountsMenu="matMenu">
         <button mat-menu-item [routerLink]="['/accounts']">{{'accounts' | translate}}</button>
-        <button mat-menu-item [routerLink]="['/register']">{{'register' | translate}}</button>
-        <button mat-menu-item [routerLink]="['/register2']">{{'register' | translate}}</button>
+        <button mat-menu-item [routerLink]="['/register']" *ngIf="modules.register">{{'register' | translate}}</button>
+        <button mat-menu-item [routerLink]="['/register2']" *ngIf="modules.register2">{{'register' | translate}}</button>
     </mat-menu>
 
-    <button mat-button [routerLink]="['/contacts']">{{'contacts' | translate}}</button>
+    <button mat-button [routerLink]="['/contacts']" *ngIf="modules.contacts">{{'contacts' | translate}}</button>
 
     <app-lang-switcher class="lang-switcher" matTooltip="{{'language_switcher' | translate}}"></app-lang-switcher> 
 </nav>

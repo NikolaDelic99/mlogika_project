@@ -3,18 +3,21 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { UserManagerResponse } from '../model/UserManagerResponse';
 import { Contact } from '../contacts/Contact';
+import { environment } from '../../environments/environment';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class GetContactsService {
 
-  private getContactsUrl = 'http://localhost:8080/api/getContacts';
+  baseUrl = environment.protocol + "//" + environment.host + "/" + environment.root;
+
 
   constructor(private http:HttpClient) {}
 
   getContacts(accountId:number):Observable<UserManagerResponse<Contact>> {
-    return this.http.get<UserManagerResponse<Contact>>(`${this.getContactsUrl}?accountId=${accountId}`);
+    return this.http.get<UserManagerResponse<Contact>>(`${this.baseUrl + '/getContacts'}?accountId=${accountId}`);
 
   }
 
