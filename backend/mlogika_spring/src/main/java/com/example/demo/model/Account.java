@@ -1,17 +1,44 @@
 package com.example.demo.model;
 
+
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Transient;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+@Entity
+@Table(name = "Account")
 public class Account {
-	private Long id;
-	private String firstname;
-	private String lastname;
-	private String username;
-	@JsonProperty("password")
-	private String salt;
-	private String contactType;
-	@JsonProperty("contact")
+    @Id
+    @Column(name = "id")
+    private Long id;
+
+    @Column(name = "firstname")
+    private String firstname;
+
+    @Column(name = "lastname")
+    private String lastname;
+
+    @Column(name = "username")
+    private String username;
+
+    @Column(name = "salt")
+    @JsonProperty("password")
+    private String salt;
+
+    @Transient  
+    private String contactType;
+
+    @Transient  
+    @JsonProperty("contact")
     private String contactContact;
+
+    
+
 	
 	public Long getId() {
 		return id;
