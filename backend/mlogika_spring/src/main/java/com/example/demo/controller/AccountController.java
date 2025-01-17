@@ -12,6 +12,8 @@ import java.util.Map;
 
 
 
+
+@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*", allowCredentials = "true")
 @RestController
 @RequestMapping("/api")
 public class AccountController {

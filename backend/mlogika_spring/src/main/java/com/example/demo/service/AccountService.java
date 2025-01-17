@@ -5,6 +5,7 @@ import com.example.demo.model.Contact;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -18,12 +19,18 @@ import java.util.Map;
 public class AccountService {
 	@Autowired
     private JdbcTemplate jdbcTemplate;
+	
+	@Autowired
+	private PasswordEncoder passwordEncoder;
 
     @Transactional
     public ResponseEntity<Map<String, Object>> addAccount(Account account) {
         try {
+        	
+        	String encodedPassword = passwordEncoder.encode(account.getSalt());
+        	
             String sql = "INSERT INTO Account (firstname, lastname, username, salt,hash) VALUES (?, ?, ?, ?, ?)";
-            jdbcTemplate.update(sql, account.getFirstname(), account.getLastname(), account.getUsername(), account.getSalt(), "");
+            jdbcTemplate.update(sql, account.getFirstname(), account.getLastname(), account.getUsername(), encodedPassword, "");
             
             int accountId = jdbcTemplate.queryForObject("SELECT LAST_INSERT_ID()", Integer.class);
             
