@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import { mapToCanActivate, Routes } from '@angular/router';
 
 export const routes: Routes = [
   { 
@@ -29,14 +29,22 @@ export const routes: Routes = [
     path: 'add-contact/:account_id', 
     loadComponent: () => import('./app/add-contact/add-contact.component').then(c => c.AddContactComponent)
   },
+  {
+    path: 'login',
+    loadComponent: () => import('./app/login/login.component').then(c => c.LoginComponent), data: {preload: true}
+  },
+  {
+    path: 'user',
+    loadComponent: () => import('./app/user/user.component').then(c => c.UserComponent)
+  },
   { 
     path: '', 
-    redirectTo: '/home', 
+    redirectTo: '/login', 
     pathMatch: 'full' 
   },
   { 
     path: '**', 
-    redirectTo: '/home', 
+    redirectTo: '/login', 
     pathMatch: 'full' 
   }
 ];

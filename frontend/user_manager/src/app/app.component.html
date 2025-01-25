@@ -4,8 +4,8 @@
 
     <mat-menu #accountsMenu="matMenu">
         <button mat-menu-item [routerLink]="['/accounts']">{{'accounts' | translate}}</button>
-        <button mat-menu-item [routerLink]="['/register']" *ngIf="modules.register">{{'register' | translate}}</button>
-        <button mat-menu-item [routerLink]="['/register2']" *ngIf="modules.register2">{{'register' | translate}}</button>
+        <button mat-menu-item [routerLink]="['/register']" *ngIf="!checkLogin() && modules.register">{{'register' | translate}}</button>
+        <button mat-menu-item [routerLink]="['/register2']" *ngIf="!checkLogin() && modules.register2">{{'register' | translate}}</button>
     </mat-menu>
 
     <button mat-button [routerLink]="['/contacts']" *ngIf="modules.contacts">{{'contacts' | translate}}</button>
@@ -13,4 +13,20 @@
     <app-lang-switcher class="lang-switcher" matTooltip="{{'language_switcher' | translate}}"></app-lang-switcher> 
 </nav>
 
+
+<ng-template class="menu" [ngIf]="checkLogin()">
+    <button aria-label="Logout" mat-menu-item (click)="logout()">
+        <span class="menu-text">
+            <span title="Logout" aria-label="Logout" role="img" class="material-icons logout menu-icon icon-id">logout</span>
+            Logout
+        </span>
+    </button>
+</ng-template>
+
+
+<ng-template *ngIf="!checkLogin()">
+    <button mat-button [routerLink]="['/login']" mat-menu-item>{{'login' | translate}}</button>
+</ng-template>
+
 <router-outlet></router-outlet>
+
