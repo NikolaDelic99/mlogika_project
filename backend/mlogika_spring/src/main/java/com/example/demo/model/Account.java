@@ -2,12 +2,15 @@ package com.example.demo.model;
 
 
 
+import java.time.LocalDateTime;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 @Entity
@@ -36,6 +39,11 @@ public class Account {
     @Transient  
     @JsonProperty("contact")
     private String contactContact;
+    
+    @Column(name = "registrationTimestamp")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss")
+    private LocalDateTime registrationTimestamp;
+
 
     
 
@@ -81,6 +89,12 @@ public class Account {
 	}
 	public void setContactContact(String contactContact) {
 		this.contactContact = contactContact;
+	}
+	public LocalDateTime getRegistrationTimestamp() {
+		return registrationTimestamp;
+	}
+	public void setRegistrationTimestamp(LocalDateTime registrationTimestamp) {
+		this.registrationTimestamp=registrationTimestamp;
 	}
 
 }

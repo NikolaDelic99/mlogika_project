@@ -1,4 +1,32 @@
 <div class="div-accounts">
+
+    <div class="filter-container">
+        <mat-form-field appearance="outline">
+            <mat-label>Select Date</mat-label>
+            <input matInput [matDatepicker]="datepicker" [(ngModel)]="selectedDate">
+            <mat-datepicker-toggle matIconSuffix [for]="datepicker"></mat-datepicker-toggle>
+            <mat-datepicker #datepicker></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Select Time</mat-label>
+            <input matInput [ngxTimepicker]="timepicker" placeholder="Select Time" [(ngModel)]="selectedTime">
+            <ngx-material-timepicker #timepicker></ngx-material-timepicker>
+        </mat-form-field>
+        
+
+        <mat-form-field>
+            <mat-label>Pick a time</mat-label>
+            <input matInput [matTimepicker]="picker">
+            <mat-timepicker-toggle matIconSuffix [for]="picker">
+              <mat-icon matTimepickerToggleIcon>keyboard_arrow_down</mat-icon>
+            </mat-timepicker-toggle>
+            <mat-timepicker #picker/>
+          </mat-form-field>
+
+        <button mat-raised-button color="primary" (click)="applyFilter()">Filter</button>
+    </div>
+    
     <table mat-table [dataSource]="tableData" class="table-accounts">
         <ng-container matColumnDef="delete">
             <th mat-header-cell *matHeaderCellDef></th>

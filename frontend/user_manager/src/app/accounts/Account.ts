@@ -5,4 +5,5 @@ export interface Account {
     username:string;
     contact_type:string;
     contact_contact:string;
+    registrationTimestamp:string;
 }

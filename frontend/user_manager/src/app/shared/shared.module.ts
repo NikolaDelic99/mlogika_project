@@ -34,6 +34,10 @@ import { NgFor } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { MatMenuTrigger } from '@angular/material/menu';
 import { RouterOutlet } from '@angular/router';
+import { MatTimepickerModule } from '@angular/material/timepicker';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
+
 
 @NgModule({
   imports: [
@@ -70,7 +74,10 @@ import { RouterOutlet } from '@angular/router';
     NgFor,
     RouterLink,
     MatMenuTrigger,
-    RouterOutlet
+    RouterOutlet,
+    MatTimepickerModule,
+    MatDatepickerModule,
+    NgxMaterialTimepickerModule
   ],
   exports: [
     CommonModule,
@@ -106,8 +113,10 @@ import { RouterOutlet } from '@angular/router';
     NgFor,
     RouterLink,
     MatMenuTrigger,
-    RouterOutlet
-    
+    RouterOutlet,
+    MatTimepickerModule,
+    MatDatepickerModule,
+    NgxMaterialTimepickerModule
   ]
 })
 export class SharedModule { }

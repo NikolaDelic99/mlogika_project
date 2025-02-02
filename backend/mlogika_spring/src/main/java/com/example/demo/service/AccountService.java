@@ -29,7 +29,7 @@ public class AccountService {
         	
         	String encodedPassword = passwordEncoder.encode(account.getSalt());
         	
-            String sql = "INSERT INTO Account (firstname, lastname, username, salt,hash) VALUES (?, ?, ?, ?, ?)";
+            String sql = "INSERT INTO Account (firstname, lastname, username, salt,hash, registrationTimestamp) VALUES (?, ?, ?, ?, ?, NOW())";
             jdbcTemplate.update(sql, account.getFirstname(), account.getLastname(), account.getUsername(), encodedPassword, "");
             
             int accountId = jdbcTemplate.queryForObject("SELECT LAST_INSERT_ID()", Integer.class);
@@ -140,7 +140,7 @@ public class AccountService {
 
     public ResponseEntity<Map<String, Object>> getAccounts() {
         try {
-            String sql = "SELECT a.id,a.firstname, a.lastname, a.username, c.type as contact_type, c.contact as contact_contact " +
+            String sql = "SELECT a.id,a.firstname, a.lastname, a.username, c.type as contact_type, c.contact as contact_contact, a.registrationTimestamp " +
                          "FROM Account a LEFT JOIN Contact c ON a.id = c.account_id WHERE c.primary_contact = true";
             List<Map<String, Object>> accounts = jdbcTemplate.queryForList(sql);
             
