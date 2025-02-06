@@ -17,7 +17,7 @@
 
         <mat-form-field>
             <mat-label>Pick a time</mat-label>
-            <input matInput [matTimepicker]="picker">
+            <input matInput [matTimepicker]="picker" [(ngModel)] = "selectedTime2">
             <mat-timepicker-toggle matIconSuffix [for]="picker">
               <mat-icon matTimepickerToggleIcon>keyboard_arrow_down</mat-icon>
             </mat-timepicker-toggle>
@@ -25,6 +25,9 @@
           </mat-form-field>
 
         <button mat-raised-button color="primary" (click)="applyFilter()">Filter</button>
+
+        <button mat-raised-button color="primary" (click)="applyFilter2()">Filter2</button>
+
     </div>
     
     <table mat-table [dataSource]="tableData" class="table-accounts">

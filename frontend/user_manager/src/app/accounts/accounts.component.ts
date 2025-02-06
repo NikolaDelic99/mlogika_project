@@ -23,6 +23,7 @@ export class AccountsComponent implements AfterViewInit, OnDestroy {
 
   public selectedDate: Date | null = null;
   public selectedTime: string | null = null;
+  public selectedTime2: Date | null = null;
 
   constructor(
     private getAccountsService: GetAccountsService,
@@ -119,5 +120,54 @@ export class AccountsComponent implements AfterViewInit, OnDestroy {
 
     this.changeDetectorRef.detectChanges();
   }
+
+  applyFilter2(): void {
+    if (!this.selectedDate || !this.selectedTime2) {
+      this.snackBar.open("Please select both date and time!", "OK", { duration: 3000 });
+      return;
+    }
+
+    console.log("Selected Date:", this.selectedDate);
+    console.log("Selected Time:", this.selectedTime2);
+
+    const selectedTimestamp = new Date(this.selectedDate);
+    
+    
+    const hour = this.selectedTime2.getHours();
+    const minute = this.selectedTime2.getMinutes();
+
+    selectedTimestamp.setHours(hour, minute, 0, 0);
+
+
+    const formattedTime = selectedTimestamp.toTimeString().slice(0, 5);
+
+    console.log("Selected Time (formatted):", formattedTime);
+
+    
+
+    console.log("Selected timestamp:", selectedTimestamp);
+
+    this.tableData.data = this.tableData.data.filter(account => {
+      console.log('Account object:', account);
+
+      console.log('registrationTimestamp:', account.registrationTimestamp);
+
+      if (!account.registrationTimestamp) {
+        console.warn("Nalog nema validan registrationTimestamp:", account);
+        return false;
+      }
+      
+      const accountTimestamp = new Date(account.registrationTimestamp);
+      if (isNaN(accountTimestamp.getTime())) {
+        console.warn("Nevalidan datum u account.registrationTimestamp:", account.registrationTimestamp);
+        return false;
+      }
+      
+      return accountTimestamp > selectedTimestamp;
+    });
+
+    this.changeDetectorRef.detectChanges();
+  }
+
 }
 
