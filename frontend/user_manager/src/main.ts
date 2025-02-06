@@ -80,8 +80,9 @@ bootstrapApplication(AppComponent, {
     RegisterService,
     Register2Service,
     { provide: MAT_DATE_LOCALE, useValue: 'en-GB' },
-    { provide: DateAdapter, useClass: NativeDateAdapter },
-    { provide: MAT_DATE_FORMATS, useValue: MY_DATE_FORMATS },
+    /*{ provide: DateAdapter, useClass: NativeDateAdapter },*/
+    /*{ provide: MAT_DATE_FORMATS, useValue: MY_DATE_FORMATS },*/
+    provideNativeDateAdapter(),
     provideHttpClient(),
   ],
 }).catch(err => console.error(err));
