@@ -1,0 +1,85 @@
+11-Feb-2025 11:25:20.082 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.98
+11-Feb-2025 11:25:20.249 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 5 2024 19:50:29 UTC
+11-Feb-2025 11:25:20.249 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.98.0
+11-Feb-2025 11:25:20.250 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+11-Feb-2025 11:25:20.250 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-205-generic
+11-Feb-2025 11:25:20.250 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+11-Feb-2025 11:25:20.250 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/jdk1.8.0_112/jre
+11-Feb-2025 11:25:20.250 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_112-b15
+11-Feb-2025 11:25:20.251 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+11-Feb-2025 11:25:20.251 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/delca/Downloads/apache-tomcat-9.0.98
+11-Feb-2025 11:25:20.251 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/delca/Downloads/apache-tomcat-9.0.98
+11-Feb-2025 11:25:20.288 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/delca/Downloads/apache-tomcat-9.0.98/conf/logging.properties
+11-Feb-2025 11:25:20.288 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Feb-2025 11:25:20.289 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+11-Feb-2025 11:25:20.289 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+11-Feb-2025 11:25:20.289 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+11-Feb-2025 11:25:20.290 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+11-Feb-2025 11:25:20.290 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/delca/Downloads/apache-tomcat-9.0.98
+11-Feb-2025 11:25:20.290 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/delca/Downloads/apache-tomcat-9.0.98
+11-Feb-2025 11:25:20.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/delca/Downloads/apache-tomcat-9.0.98/temp
+11-Feb-2025 11:25:20.328 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/home/db2inst1/sqllib/lib64:/home/db2inst1/sqllib/lib64/gskit:/home/db2inst1/sqllib/lib32:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+11-Feb-2025 11:25:22.606 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+11-Feb-2025 11:25:22.996 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [3887] milliseconds
+11-Feb-2025 11:25:23.496 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+11-Feb-2025 11:25:23.497 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.98]
+11-Feb-2025 11:25:24.023 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/delca/Downloads/apache-tomcat-9.0.98/webapps/mlogika_spring-0.0.1-SNAPSHOT.war]
+11-Feb-2025 11:25:41.669 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+11-Feb-2025 11:25:42.189 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/delca/Downloads/apache-tomcat-9.0.98/webapps/mlogika_spring-0.0.1-SNAPSHOT.war] has finished in [18,162] ms
+11-Feb-2025 11:25:42.191 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Downloads/apache-tomcat-9.0.98/webapps/host-manager]
+11-Feb-2025 11:25:42.323 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Downloads/apache-tomcat-9.0.98/webapps/host-manager] has finished in [132] ms
+11-Feb-2025 11:25:42.324 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Downloads/apache-tomcat-9.0.98/webapps/ROOT]
+11-Feb-2025 11:25:42.387 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Downloads/apache-tomcat-9.0.98/webapps/ROOT] has finished in [55] ms
+11-Feb-2025 11:25:42.387 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Downloads/apache-tomcat-9.0.98/webapps/manager]
+11-Feb-2025 11:25:42.467 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Downloads/apache-tomcat-9.0.98/webapps/manager] has finished in [80] ms
+11-Feb-2025 11:25:42.468 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Downloads/apache-tomcat-9.0.98/webapps/examples]
+11-Feb-2025 11:25:43.157 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Downloads/apache-tomcat-9.0.98/webapps/examples] has finished in [688] ms
+11-Feb-2025 11:25:43.157 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Downloads/apache-tomcat-9.0.98/webapps/docs]
+11-Feb-2025 11:25:43.216 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Downloads/apache-tomcat-9.0.98/webapps/docs] has finished in [58] ms
+11-Feb-2025 11:25:43.238 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+11-Feb-2025 11:25:43.343 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [20346] milliseconds
+11-Feb-2025 11:38:16.207 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+11-Feb-2025 11:38:16.308 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+11-Feb-2025 11:38:16.315 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+11-Feb-2025 11:38:16.897 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+11-Feb-2025 11:38:16.920 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+11-Feb-2025 11:40:38.734 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.98
+11-Feb-2025 11:40:38.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 5 2024 19:50:29 UTC
+11-Feb-2025 11:40:38.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.98.0
+11-Feb-2025 11:40:38.828 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+11-Feb-2025 11:40:38.828 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-205-generic
+11-Feb-2025 11:40:38.829 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+11-Feb-2025 11:40:38.829 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/jdk1.8.0_112/jre
+11-Feb-2025 11:40:38.830 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_112-b15
+11-Feb-2025 11:40:38.830 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+11-Feb-2025 11:40:38.830 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98
+11-Feb-2025 11:40:38.830 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98
+11-Feb-2025 11:40:38.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/conf/logging.properties
+11-Feb-2025 11:40:38.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Feb-2025 11:40:38.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+11-Feb-2025 11:40:38.863 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+11-Feb-2025 11:40:38.863 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+11-Feb-2025 11:40:38.863 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+11-Feb-2025 11:40:38.864 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98
+11-Feb-2025 11:40:38.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98
+11-Feb-2025 11:40:38.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/temp
+11-Feb-2025 11:40:38.881 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/home/db2inst1/sqllib/lib64:/home/db2inst1/sqllib/lib64/gskit:/home/db2inst1/sqllib/lib32:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+11-Feb-2025 11:40:40.477 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+11-Feb-2025 11:40:40.630 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [3118] milliseconds
+11-Feb-2025 11:40:40.911 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+11-Feb-2025 11:40:40.912 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.98]
+11-Feb-2025 11:40:41.077 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/mlogika_spring-0.0.1-SNAPSHOT.war]
+11-Feb-2025 11:40:52.297 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+11-Feb-2025 11:40:52.720 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/mlogika_spring-0.0.1-SNAPSHOT.war] has finished in [11,641] ms
+11-Feb-2025 11:40:52.722 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/host-manager]
+11-Feb-2025 11:40:52.833 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/host-manager] has finished in [111] ms
+11-Feb-2025 11:40:52.834 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/ROOT]
+11-Feb-2025 11:40:52.900 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/ROOT] has finished in [66] ms
+11-Feb-2025 11:40:52.900 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/manager]
+11-Feb-2025 11:40:52.972 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/manager] has finished in [72] ms
+11-Feb-2025 11:40:52.974 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/examples]
+11-Feb-2025 11:40:53.662 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/examples] has finished in [683] ms
+11-Feb-2025 11:40:53.664 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/docs]
+11-Feb-2025 11:40:53.706 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/docs] has finished in [42] ms
+11-Feb-2025 11:40:53.732 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+11-Feb-2025 11:40:53.836 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [13205] milliseconds
