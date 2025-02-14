@@ -18,3 +18,10 @@
 0:0:0:0:0:0:0:1 - - [11/Feb/2025:11:40:54 +0100] "GET /assets/flags/4x3/gb.svg HTTP/1.1" 404 786
 0:0:0:0:0:0:0:1 - - [11/Feb/2025:11:41:11 +0100] "GET /mlogika_spring-0.0.1-SNAPSHOT/804.f43b0f3fa46daa52.js HTTP/1.1" 200 3443
 0:0:0:0:0:0:0:1 - - [11/Feb/2025:11:41:30 +0100] "POST /mlogika_spring/api/addAccount HTTP/1.1" 404 788
+0:0:0:0:0:0:0:1 - - [11/Feb/2025:12:15:52 +0100] "GET /mlogika_spring/api/getAccounts HTTP/1.1" 404 789
+0:0:0:0:0:0:0:1 - - [11/Feb/2025:13:03:31 +0100] "GET /assets/flags/4x3/gb.svg HTTP/1.1" 404 786
+0:0:0:0:0:0:0:1 - - [11/Feb/2025:13:03:42 +0100] "GET /mlogika_spring/api/getAccounts HTTP/1.1" 404 789
+0:0:0:0:0:0:0:1 - - [11/Feb/2025:13:05:27 +0100] "GET /mlogika_spring/api/getAccounts HTTP/1.1" 404 789
+0:0:0:0:0:0:0:1 - - [11/Feb/2025:13:05:31 +0100] "GET /mlogika_spring-0.0.1-SNAPSHOT/999.f6a51172c3dd73d5.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Feb/2025:13:05:31 +0100] "GET /mlogika_spring/api/getAccounts HTTP/1.1" 404 789
+0:0:0:0:0:0:0:1 - - [11/Feb/2025:13:06:56 +0100] "GET /mlogika_spring/api/getAccounts HTTP/1.1" 404 789

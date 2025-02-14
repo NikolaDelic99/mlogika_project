@@ -13,9 +13,9 @@ protocol: window.location.protocol,
 
 host: window.location.host,
 
-root: 'mlogika_spring/api',
+root: 'mlogika-spring/api',
 
-url: window.location.protocol+'//'+window.location.host+'/mlogika_spring/#',
+url: window.location.protocol+'//'+window.location.host+'/mlogika-spring/#',
 
 static: false,
 

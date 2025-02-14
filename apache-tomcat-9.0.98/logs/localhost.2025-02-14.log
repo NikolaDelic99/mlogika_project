@@ -1,0 +1,16 @@
+14-Feb-2025 15:17:59.583 INFO [main] org.apache.catalina.core.ApplicationContext.log 2 Spring WebApplicationInitializers detected on classpath
+14-Feb-2025 15:18:09.886 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+14-Feb-2025 15:18:22.397 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+14-Feb-2025 15:18:22.398 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+14-Feb-2025 15:18:22.400 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@5c0be4db')
+14-Feb-2025 15:18:22.836 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcherServlet'
+14-Feb-2025 15:25:33.318 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+14-Feb-2025 15:25:33.318 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+14-Feb-2025 15:25:33.332 INFO [main] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcherServlet'
+14-Feb-2025 15:25:33.333 INFO [main] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+14-Feb-2025 15:33:13.975 INFO [main] org.apache.catalina.core.ApplicationContext.log 2 Spring WebApplicationInitializers detected on classpath
+14-Feb-2025 15:33:22.608 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+14-Feb-2025 15:33:36.218 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+14-Feb-2025 15:33:36.219 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+14-Feb-2025 15:33:36.221 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@7d372ea8')
+14-Feb-2025 15:33:36.590 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcherServlet'

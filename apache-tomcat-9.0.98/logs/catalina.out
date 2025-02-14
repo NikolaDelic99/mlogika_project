@@ -692,3 +692,326 @@
 11-Feb-2025 11:40:53.706 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/docs] has finished in [42] ms
 11-Feb-2025 11:40:53.732 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 11-Feb-2025 11:40:53.836 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [13205] milliseconds
+11-Feb-2025 12:55:17.831 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+11-Feb-2025 12:55:17.892 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+11-Feb-2025 12:55:17.898 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+11-Feb-2025 12:55:18.443 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+11-Feb-2025 12:55:18.465 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+11-Feb-2025 13:03:10.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.98
+11-Feb-2025 13:03:10.904 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 5 2024 19:50:29 UTC
+11-Feb-2025 13:03:10.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.98.0
+11-Feb-2025 13:03:10.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+11-Feb-2025 13:03:10.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-205-generic
+11-Feb-2025 13:03:10.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+11-Feb-2025 13:03:10.925 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/jdk1.8.0_112/jre
+11-Feb-2025 13:03:10.925 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_112-b15
+11-Feb-2025 13:03:10.925 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+11-Feb-2025 13:03:10.925 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98
+11-Feb-2025 13:03:10.926 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98
+11-Feb-2025 13:03:10.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/conf/logging.properties
+11-Feb-2025 13:03:10.928 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Feb-2025 13:03:10.928 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+11-Feb-2025 13:03:10.928 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+11-Feb-2025 13:03:10.928 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+11-Feb-2025 13:03:10.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+11-Feb-2025 13:03:10.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98
+11-Feb-2025 13:03:10.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98
+11-Feb-2025 13:03:10.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/temp
+11-Feb-2025 13:03:10.937 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/home/db2inst1/sqllib/lib64:/home/db2inst1/sqllib/lib64/gskit:/home/db2inst1/sqllib/lib32:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+11-Feb-2025 13:03:12.587 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+11-Feb-2025 13:03:12.736 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [2519] milliseconds
+11-Feb-2025 13:03:12.953 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+11-Feb-2025 13:03:12.954 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.98]
+11-Feb-2025 13:03:13.096 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/mlogika_spring-0.0.1-SNAPSHOT.war]
+11-Feb-2025 13:03:28.633 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+11-Feb-2025 13:03:29.570 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/mlogika_spring-0.0.1-SNAPSHOT.war] has finished in [16,471] ms
+11-Feb-2025 13:03:29.572 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/host-manager]
+11-Feb-2025 13:03:29.751 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/host-manager] has finished in [180] ms
+11-Feb-2025 13:03:29.752 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/ROOT]
+11-Feb-2025 13:03:29.827 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/ROOT] has finished in [75] ms
+11-Feb-2025 13:03:29.830 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/manager]
+11-Feb-2025 13:03:29.901 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/manager] has finished in [71] ms
+11-Feb-2025 13:03:29.907 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/examples]
+11-Feb-2025 13:03:30.685 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/examples] has finished in [778] ms
+11-Feb-2025 13:03:30.686 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/docs]
+11-Feb-2025 13:03:30.818 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/docs] has finished in [126] ms
+11-Feb-2025 13:03:30.851 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+11-Feb-2025 13:03:30.956 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [18219] milliseconds
+14-Feb-2025 15:17:51.065 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.98
+14-Feb-2025 15:17:51.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 5 2024 19:50:29 UTC
+14-Feb-2025 15:17:51.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.98.0
+14-Feb-2025 15:17:51.087 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+14-Feb-2025 15:17:51.087 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-205-generic
+14-Feb-2025 15:17:51.087 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+14-Feb-2025 15:17:51.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/jdk1.8.0_112/jre
+14-Feb-2025 15:17:51.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_112-b15
+14-Feb-2025 15:17:51.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+14-Feb-2025 15:17:51.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98
+14-Feb-2025 15:17:51.089 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98
+14-Feb-2025 15:17:51.090 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/conf/logging.properties
+14-Feb-2025 15:17:51.091 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-Feb-2025 15:17:51.094 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+14-Feb-2025 15:17:51.094 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+14-Feb-2025 15:17:51.094 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+14-Feb-2025 15:17:51.095 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+14-Feb-2025 15:17:51.095 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98
+14-Feb-2025 15:17:51.096 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98
+14-Feb-2025 15:17:51.096 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/temp
+14-Feb-2025 15:17:51.101 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/home/db2inst1/sqllib/lib64:/home/db2inst1/sqllib/lib64/gskit:/home/db2inst1/sqllib/lib32:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+14-Feb-2025 15:17:52.185 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+14-Feb-2025 15:17:52.279 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1809] milliseconds
+14-Feb-2025 15:17:52.385 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+14-Feb-2025 15:17:52.387 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.98]
+14-Feb-2025 15:17:52.444 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/mlogika-spring.war]
+14-Feb-2025 15:17:59.354 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.18)
+
+[30m2025-02-14T15:18:04,772[m [32mINFO        [m[[1;34mmain[m] [1;33mo.s.b.StartupInfoLogger[m:       Starting MlogikaSpringApplication v0.0.1 using Java 1.8.0_112 on delca-Lenovo-V145-15AST with PID 26441 (/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/mlogika-spring/WEB-INF/classes started by delca in /home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/bin)
+[30m2025-02-14T15:18:04,860[m [36mDEBUG       [m[[1;34mmain[m] [1;33mo.s.b.StartupInfoLogger[m:       Running with Spring Boot v2.7.18, Spring v5.3.31
+[30m2025-02-14T15:18:04,876[m [32mINFO        [m[[1;34mmain[m] [1;33mo.s.b.SpringApplication[m:       No active profile set, falling back to 1 default profile: "default"
+[30m2025-02-14T15:18:08,134[m [32mINFO        [m[[1;34mmain[m] [1;33mo.s.d.r.c.RepositoryConfigurationDelegate[m:       Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[30m2025-02-14T15:18:08,329[m [32mINFO        [m[[1;34mmain[m] [1;33mo.s.d.r.c.RepositoryConfigurationDelegate[m:       Finished Spring Data repository scanning in 168 ms. Found 1 JPA repository interfaces.
+[30m2025-02-14T15:18:09,887[m [32mINFO        [m[[1;34mmain[m] [1;33mo.s.b.w.s.c.ServletWebServerApplicationContext[m:       Root WebApplicationContext: initialization completed in 4852 ms
+[30m2025-02-14T15:18:11,773[m [32mINFO        [m[[1;34mmain[m] [1;33mc.z.h.HikariDataSource[m:       HikariPool-1 - Starting...
+[30m2025-02-14T15:18:12,927[m [32mINFO        [m[[1;34mmain[m] [1;33mc.z.h.HikariDataSource[m:       HikariPool-1 - Start completed.
+[30m2025-02-14T15:18:13,119[m [32mINFO        [m[[1;34mmain[m] [1;33mo.h.j.i.u.LogHelper[m:       HHH000204: Processing PersistenceUnitInfo [name: default]
+[30m2025-02-14T15:18:13,752[m [32mINFO        [m[[1;34mmain[m] [1;33mo.h.Version[m:       HHH000412: Hibernate ORM core version 5.6.15.Final
+[30m2025-02-14T15:18:14,426[m [32mINFO        [m[[1;34mmain[m] [1;33mo.h.a.c.r.j.JavaReflectionManager[m:       HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[30m2025-02-14T15:18:14,985[m [32mINFO        [m[[1;34mmain[m] [1;33mo.h.d.Dialect[m:       HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[30m2025-02-14T15:18:17,115[m [32mINFO        [m[[1;34mmain[m] [1;33mo.h.e.t.j.p.i.JtaPlatformInitiator[m:       HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[30m2025-02-14T15:18:17,170[m [32mINFO        [m[[1;34mmain[m] [1;33mo.s.o.j.AbstractEntityManagerFactoryBean[m:       Initialized JPA EntityManagerFactory for persistence unit 'default'
+[30m2025-02-14T15:18:19,593[m [32mINFO        [m[[1;34mmain[m] [1;33mo.s.s.w.DefaultSecurityFilterChain[m:       Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@22aaca32, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c042ee3, org.springframework.security.web.context.SecurityContextPersistenceFilter@29a08daf, org.springframework.security.web.header.HeaderWriterFilter@e25817f, org.springframework.web.filter.CorsFilter@3b0f98c6, org.springframework.security.web.authentication.logout.LogoutFilter@927e34d, com.example.demo.JwtAuthenticationFilter@3ff5b628, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13e771e6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34d3f4e2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@438237b8, org.springframework.security.web.session.SessionManagementFilter@3068f882, org.springframework.security.web.access.ExceptionTranslationFilter@48d60abd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2af4717c]
+[30m2025-02-14T15:18:20,018[m [33mWARN        [m[[1;34mmain[m] [1;33mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[m:       spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[30m2025-02-14T15:18:20,569[m [36mDEBUG       [m[[1;34mmain[m] [1;33mo.s.w.s.m.m.a.RequestMappingHandlerAdapter[m:       ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[30m2025-02-14T15:18:20,954[m [36mDEBUG       [m[[1;34mmain[m] [1;33mo.s.w.s.h.AbstractHandlerMethodMapping[m:       11 mappings in 'requestMappingHandlerMapping'
+[30m2025-02-14T15:18:21,021[m [36mDEBUG       [m[[1;34mmain[m] [1;33mo.s.w.s.h.SimpleUrlHandlerMapping[m:       Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[30m2025-02-14T15:18:21,048[m [36mDEBUG       [m[[1;34mmain[m] [1;33mo.s.w.s.m.m.a.ExceptionHandlerExceptionResolver[m:       ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[30m2025-02-14T15:18:21,287[m [32mINFO        [m[[1;34mmain[m] [1;33mo.s.b.StartupInfoLogger[m:       Started MlogikaSpringApplication in 19.948 seconds (JVM running for 31.741)
+[30m2025-02-14T15:18:21,353[m [36mDEBUG       [m[[1;34mmain[m] [1;33mo.s.w.f.GenericFilterBean[m:       Filter 'jwtAuthenticationFilter' configured for use
+14-Feb-2025 15:18:21.419 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/mlogika-spring.war] has finished in [28,974] ms
+14-Feb-2025 15:18:21.421 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/host-manager]
+14-Feb-2025 15:18:21.567 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/host-manager] has finished in [135] ms
+14-Feb-2025 15:18:21.568 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/ROOT]
+14-Feb-2025 15:18:21.650 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/ROOT] has finished in [83] ms
+14-Feb-2025 15:18:21.651 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/manager]
+14-Feb-2025 15:18:21.727 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/manager] has finished in [71] ms
+14-Feb-2025 15:18:21.729 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/examples]
+14-Feb-2025 15:18:22.420 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/examples] has finished in [691] ms
+14-Feb-2025 15:18:22.423 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/docs]
+14-Feb-2025 15:18:22.460 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/docs] has finished in [38] ms
+14-Feb-2025 15:18:22.475 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+14-Feb-2025 15:18:22.566 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [30286] milliseconds
+[30m2025-02-14T15:18:22,836[m [32mINFO        [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.FrameworkServlet[m:       Initializing Servlet 'dispatcherServlet'
+[30m2025-02-14T15:18:22,837[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.DispatcherServlet[m:       Detected StandardServletMultipartResolver
+[30m2025-02-14T15:18:22,838[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.DispatcherServlet[m:       Detected AcceptHeaderLocaleResolver
+[30m2025-02-14T15:18:22,839[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.DispatcherServlet[m:       Detected FixedThemeResolver
+[30m2025-02-14T15:18:22,847[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.DispatcherServlet[m:       Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5bfa9a7
+[30m2025-02-14T15:18:22,848[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.DispatcherServlet[m:       Detected org.springframework.web.servlet.support.SessionFlashMapManager@6d2c10dd
+[30m2025-02-14T15:18:22,849[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.FrameworkServlet[m:       enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[30m2025-02-14T15:18:22,849[m [32mINFO        [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.FrameworkServlet[m:       Completed initialization in 12 ms
+[30m2025-02-14T15:18:23,000[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.c.l.LogFormatUtils[m:       GET "/mlogika-spring/", parameters={}
+[30m2025-02-14T15:18:23,056[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[30m2025-02-14T15:18:23,069[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.r.ResourceHttpRequestHandler[m:       Resource not found
+[30m2025-02-14T15:18:23,073[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.FrameworkServlet[m:       Completed 404 NOT_FOUND
+[30m2025-02-14T15:18:23,162[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.c.l.LogFormatUtils[m:       "FORWARD" dispatch for GET "/mlogika-spring/error", parameters={}
+[30m2025-02-14T15:18:23,180[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[30m2025-02-14T15:18:23,268[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.v.ContentNegotiatingViewResolver[m:       Selected 'text/html' given [text/html, text/html;q=0.8]
+[30m2025-02-14T15:18:23,285[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.FrameworkServlet[m:       Exiting from "FORWARD" dispatch, status 404
+[30m2025-02-14T15:20:19,663[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-5[m] [1;33mo.s.c.l.LogFormatUtils[m:       GET "/mlogika-spring/", parameters={}
+[30m2025-02-14T15:20:19,699[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-5[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[30m2025-02-14T15:20:19,713[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-5[m] [1;33mo.s.w.s.r.ResourceHttpRequestHandler[m:       Resource not found
+[30m2025-02-14T15:20:19,714[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-5[m] [1;33mo.s.w.s.FrameworkServlet[m:       Completed 404 NOT_FOUND
+[30m2025-02-14T15:20:19,716[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-5[m] [1;33mo.s.c.l.LogFormatUtils[m:       "FORWARD" dispatch for GET "/mlogika-spring/error", parameters={}
+[30m2025-02-14T15:20:19,753[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-5[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[30m2025-02-14T15:20:19,771[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-5[m] [1;33mo.s.w.s.v.ContentNegotiatingViewResolver[m:       Selected 'text/html' given [text/html, text/html;q=0.8]
+[30m2025-02-14T15:20:19,772[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-5[m] [1;33mo.s.w.s.FrameworkServlet[m:       Exiting from "FORWARD" dispatch, status 404
+[30m2025-02-14T15:20:35,795[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-6[m] [1;33mo.s.c.l.LogFormatUtils[m:       GET "/mlogika-spring/", parameters={}
+[30m2025-02-14T15:20:35,799[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-6[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[30m2025-02-14T15:20:35,801[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-6[m] [1;33mo.s.w.s.r.ResourceHttpRequestHandler[m:       Resource not found
+[30m2025-02-14T15:20:35,812[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-6[m] [1;33mo.s.w.s.FrameworkServlet[m:       Completed 404 NOT_FOUND
+[30m2025-02-14T15:20:35,813[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-6[m] [1;33mo.s.c.l.LogFormatUtils[m:       "FORWARD" dispatch for GET "/mlogika-spring/error", parameters={}
+[30m2025-02-14T15:20:35,815[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-6[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[30m2025-02-14T15:20:35,824[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-6[m] [1;33mo.s.w.s.v.ContentNegotiatingViewResolver[m:       Selected 'text/html' given [text/html, text/html;q=0.8]
+[30m2025-02-14T15:20:35,826[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-6[m] [1;33mo.s.w.s.FrameworkServlet[m:       Exiting from "FORWARD" dispatch, status 404
+[30m2025-02-14T15:20:42,503[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-9[m] [1;33mo.s.c.l.LogFormatUtils[m:       GET "/mlogika-spring/", parameters={}
+[30m2025-02-14T15:20:42,506[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-9[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[30m2025-02-14T15:20:42,508[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-9[m] [1;33mo.s.w.s.r.ResourceHttpRequestHandler[m:       Resource not found
+[30m2025-02-14T15:20:42,511[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-9[m] [1;33mo.s.w.s.FrameworkServlet[m:       Completed 404 NOT_FOUND
+[30m2025-02-14T15:20:42,514[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-9[m] [1;33mo.s.c.l.LogFormatUtils[m:       "FORWARD" dispatch for GET "/mlogika-spring/error", parameters={}
+[30m2025-02-14T15:20:42,516[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-9[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[30m2025-02-14T15:20:42,541[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-9[m] [1;33mo.s.w.s.v.ContentNegotiatingViewResolver[m:       Selected 'text/html' given [text/html, text/html;q=0.8]
+[30m2025-02-14T15:20:42,544[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-9[m] [1;33mo.s.w.s.FrameworkServlet[m:       Exiting from "FORWARD" dispatch, status 404
+[30m2025-02-14T15:23:16,221[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-3[m] [1;33mo.s.c.l.LogFormatUtils[m:       GET "/mlogika-spring/", parameters={}
+[30m2025-02-14T15:23:16,225[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-3[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[30m2025-02-14T15:23:16,229[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-3[m] [1;33mo.s.w.s.r.ResourceHttpRequestHandler[m:       Resource not found
+[30m2025-02-14T15:23:16,231[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-3[m] [1;33mo.s.w.s.FrameworkServlet[m:       Completed 404 NOT_FOUND
+[30m2025-02-14T15:23:16,233[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-3[m] [1;33mo.s.c.l.LogFormatUtils[m:       "FORWARD" dispatch for GET "/mlogika-spring/error", parameters={}
+[30m2025-02-14T15:23:16,235[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-3[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[30m2025-02-14T15:23:16,249[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-3[m] [1;33mo.s.w.s.v.ContentNegotiatingViewResolver[m:       Selected 'text/html' given [text/html, text/html;q=0.8]
+[30m2025-02-14T15:23:16,251[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-3[m] [1;33mo.s.w.s.FrameworkServlet[m:       Exiting from "FORWARD" dispatch, status 404
+14-Feb-2025 15:25:33.246 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+14-Feb-2025 15:25:33.247 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+14-Feb-2025 15:25:33.252 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+[30m2025-02-14T15:25:33,342[m [32mINFO        [m[[1;34mmain[m] [1;33mo.s.o.j.AbstractEntityManagerFactoryBean[m:       Closing JPA EntityManagerFactory for persistence unit 'default'
+[30m2025-02-14T15:25:33,347[m [32mINFO        [m[[1;34mmain[m] [1;33mc.z.h.HikariDataSource[m:       HikariPool-1 - Shutdown initiated...
+[30m2025-02-14T15:25:33,381[m [32mINFO        [m[[1;34mmain[m] [1;33mc.z.h.HikariDataSource[m:       HikariPool-1 - Shutdown completed.
+14-Feb-2025 15:25:33.393 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [mlogika-spring] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+14-Feb-2025 15:25:33.404 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+14-Feb-2025 15:25:33.421 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+14-Feb-2025 15:33:05.071 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.98
+14-Feb-2025 15:33:05.075 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 5 2024 19:50:29 UTC
+14-Feb-2025 15:33:05.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.98.0
+14-Feb-2025 15:33:05.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+14-Feb-2025 15:33:05.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-205-generic
+14-Feb-2025 15:33:05.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+14-Feb-2025 15:33:05.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/jdk1.8.0_112/jre
+14-Feb-2025 15:33:05.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_112-b15
+14-Feb-2025 15:33:05.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+14-Feb-2025 15:33:05.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98
+14-Feb-2025 15:33:05.078 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98
+14-Feb-2025 15:33:05.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/conf/logging.properties
+14-Feb-2025 15:33:05.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-Feb-2025 15:33:05.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+14-Feb-2025 15:33:05.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+14-Feb-2025 15:33:05.080 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+14-Feb-2025 15:33:05.080 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+14-Feb-2025 15:33:05.080 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98
+14-Feb-2025 15:33:05.081 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98
+14-Feb-2025 15:33:05.081 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/temp
+14-Feb-2025 15:33:05.088 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/home/db2inst1/sqllib/lib64:/home/db2inst1/sqllib/lib64/gskit:/home/db2inst1/sqllib/lib32:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+14-Feb-2025 15:33:06.079 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+14-Feb-2025 15:33:06.162 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1568] milliseconds
+14-Feb-2025 15:33:06.298 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+14-Feb-2025 15:33:06.299 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.98]
+14-Feb-2025 15:33:06.339 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/mlogika-spring.war]
+14-Feb-2025 15:33:13.776 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.18)
+
+[30m2025-02-14T15:33:17,770[m [32mINFO        [m[[1;34mmain[m] [1;33mo.s.b.StartupInfoLogger[m:       Starting MlogikaSpringApplication v0.0.1 using Java 1.8.0_112 on delca-Lenovo-V145-15AST with PID 26921 (/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/mlogika-spring/WEB-INF/classes started by delca in /home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/bin)
+[30m2025-02-14T15:33:17,834[m [36mDEBUG       [m[[1;34mmain[m] [1;33mo.s.b.StartupInfoLogger[m:       Running with Spring Boot v2.7.18, Spring v5.3.31
+[30m2025-02-14T15:33:17,844[m [32mINFO        [m[[1;34mmain[m] [1;33mo.s.b.SpringApplication[m:       No active profile set, falling back to 1 default profile: "default"
+[30m2025-02-14T15:33:20,930[m [32mINFO        [m[[1;34mmain[m] [1;33mo.s.d.r.c.RepositoryConfigurationDelegate[m:       Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[30m2025-02-14T15:33:21,153[m [32mINFO        [m[[1;34mmain[m] [1;33mo.s.d.r.c.RepositoryConfigurationDelegate[m:       Finished Spring Data repository scanning in 189 ms. Found 1 JPA repository interfaces.
+[30m2025-02-14T15:33:22,609[m [32mINFO        [m[[1;34mmain[m] [1;33mo.s.b.w.s.c.ServletWebServerApplicationContext[m:       Root WebApplicationContext: initialization completed in 4654 ms
+[30m2025-02-14T15:33:24,190[m [32mINFO        [m[[1;34mmain[m] [1;33mc.z.h.HikariDataSource[m:       HikariPool-1 - Starting...
+[30m2025-02-14T15:33:25,259[m [32mINFO        [m[[1;34mmain[m] [1;33mc.z.h.HikariDataSource[m:       HikariPool-1 - Start completed.
+[30m2025-02-14T15:33:25,452[m [32mINFO        [m[[1;34mmain[m] [1;33mo.h.j.i.u.LogHelper[m:       HHH000204: Processing PersistenceUnitInfo [name: default]
+[30m2025-02-14T15:33:26,043[m [32mINFO        [m[[1;34mmain[m] [1;33mo.h.Version[m:       HHH000412: Hibernate ORM core version 5.6.15.Final
+[30m2025-02-14T15:33:26,998[m [32mINFO        [m[[1;34mmain[m] [1;33mo.h.a.c.r.j.JavaReflectionManager[m:       HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[30m2025-02-14T15:33:27,706[m [32mINFO        [m[[1;34mmain[m] [1;33mo.h.d.Dialect[m:       HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[30m2025-02-14T15:33:31,137[m [32mINFO        [m[[1;34mmain[m] [1;33mo.h.e.t.j.p.i.JtaPlatformInitiator[m:       HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[30m2025-02-14T15:33:31,192[m [32mINFO        [m[[1;34mmain[m] [1;33mo.s.o.j.AbstractEntityManagerFactoryBean[m:       Initialized JPA EntityManagerFactory for persistence unit 'default'
+[30m2025-02-14T15:33:33,848[m [32mINFO        [m[[1;34mmain[m] [1;33mo.s.s.w.DefaultSecurityFilterChain[m:       Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2126610, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a931c02, org.springframework.security.web.context.SecurityContextPersistenceFilter@4dea8205, org.springframework.security.web.header.HeaderWriterFilter@363f50e3, org.springframework.web.filter.CorsFilter@23d3c1d1, org.springframework.security.web.authentication.logout.LogoutFilter@2ef8ef17, com.example.demo.JwtAuthenticationFilter@3157a760, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@446833f7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ff35904, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f0ee1eb, org.springframework.security.web.session.SessionManagementFilter@18a7c1f6, org.springframework.security.web.access.ExceptionTranslationFilter@62b81449, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@fbf59af]
+[30m2025-02-14T15:33:34,172[m [33mWARN        [m[[1;34mmain[m] [1;33mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[m:       spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[30m2025-02-14T15:33:34,666[m [36mDEBUG       [m[[1;34mmain[m] [1;33mo.s.w.s.m.m.a.RequestMappingHandlerAdapter[m:       ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[30m2025-02-14T15:33:34,797[m [32mINFO        [m[[1;34mmain[m] [1;33mo.s.b.a.w.s.WelcomePageHandlerMapping[m:       Adding welcome page: class path resource [static/index.html]
+[30m2025-02-14T15:33:35,027[m [36mDEBUG       [m[[1;34mmain[m] [1;33mo.s.w.s.h.AbstractHandlerMethodMapping[m:       11 mappings in 'requestMappingHandlerMapping'
+[30m2025-02-14T15:33:35,120[m [36mDEBUG       [m[[1;34mmain[m] [1;33mo.s.w.s.h.SimpleUrlHandlerMapping[m:       Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[30m2025-02-14T15:33:35,159[m [36mDEBUG       [m[[1;34mmain[m] [1;33mo.s.w.s.m.m.a.ExceptionHandlerExceptionResolver[m:       ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[30m2025-02-14T15:33:35,475[m [32mINFO        [m[[1;34mmain[m] [1;33mo.s.b.StartupInfoLogger[m:       Started MlogikaSpringApplication in 20.175 seconds (JVM running for 31.388)
+[30m2025-02-14T15:33:35,503[m [36mDEBUG       [m[[1;34mmain[m] [1;33mo.s.w.f.GenericFilterBean[m:       Filter 'jwtAuthenticationFilter' configured for use
+14-Feb-2025 15:33:35.573 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/mlogika-spring.war] has finished in [29,233] ms
+14-Feb-2025 15:33:35.577 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/host-manager]
+14-Feb-2025 15:33:35.684 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/host-manager] has finished in [107] ms
+14-Feb-2025 15:33:35.685 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/ROOT]
+14-Feb-2025 15:33:35.734 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/ROOT] has finished in [48] ms
+14-Feb-2025 15:33:35.736 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/manager]
+14-Feb-2025 15:33:35.796 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/manager] has finished in [60] ms
+14-Feb-2025 15:33:35.798 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/examples]
+14-Feb-2025 15:33:36.236 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/examples] has finished in [436] ms
+14-Feb-2025 15:33:36.236 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/docs]
+14-Feb-2025 15:33:36.269 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/docs] has finished in [33] ms
+14-Feb-2025 15:33:36.278 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+14-Feb-2025 15:33:36.370 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [30192] milliseconds
+[30m2025-02-14T15:33:36,591[m [32mINFO        [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.FrameworkServlet[m:       Initializing Servlet 'dispatcherServlet'
+[30m2025-02-14T15:33:36,592[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.DispatcherServlet[m:       Detected StandardServletMultipartResolver
+[30m2025-02-14T15:33:36,592[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.DispatcherServlet[m:       Detected AcceptHeaderLocaleResolver
+[30m2025-02-14T15:33:36,593[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.DispatcherServlet[m:       Detected FixedThemeResolver
+[30m2025-02-14T15:33:36,597[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.DispatcherServlet[m:       Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@cc226b0
+[30m2025-02-14T15:33:36,599[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.DispatcherServlet[m:       Detected org.springframework.web.servlet.support.SessionFlashMapManager@6dd3a1a1
+[30m2025-02-14T15:33:36,600[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.FrameworkServlet[m:       enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[30m2025-02-14T15:33:36,600[m [32mINFO        [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.FrameworkServlet[m:       Completed initialization in 9 ms
+[30m2025-02-14T15:33:36,759[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.c.l.LogFormatUtils[m:       GET "/mlogika-spring/", parameters={}
+[30m2025-02-14T15:33:36,852[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.v.ContentNegotiatingViewResolver[m:       Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8]
+[30m2025-02-14T15:33:36,860[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.v.AbstractView[m:       View name 'forward:', model {}
+[30m2025-02-14T15:33:36,864[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.v.InternalResourceView[m:       Forwarding to [index.html]
+[30m2025-02-14T15:33:36,877[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.c.l.LogFormatUtils[m:       "FORWARD" dispatch for GET "/mlogika-spring/index.html", parameters={}
+[30m2025-02-14T15:33:36,899[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[30m2025-02-14T15:33:37,179[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.FrameworkServlet[m:       Exiting from "FORWARD" dispatch, status 200
+[30m2025-02-14T15:33:37,195[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.FrameworkServlet[m:       Completed 200 OK
+[30m2025-02-14T15:33:37,666[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-2[m] [1;33mo.s.c.l.LogFormatUtils[m:       GET "/mlogika-spring/styles-X6I7BZRA.css", parameters={}
+[30m2025-02-14T15:33:37,669[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-2[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[30m2025-02-14T15:33:37,688[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-2[m] [1;33mo.s.w.s.FrameworkServlet[m:       Completed 200 OK
+[30m2025-02-14T15:33:37,813[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-8[m] [1;33mo.s.c.l.LogFormatUtils[m:       GET "/mlogika-spring/chunk-6PNJV7BV.js", parameters={}
+[30m2025-02-14T15:33:37,816[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-8[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[30m2025-02-14T15:33:37,819[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-6[m] [1;33mo.s.c.l.LogFormatUtils[m:       GET "/mlogika-spring/chunk-KBMBIZXK.js", parameters={}
+[30m2025-02-14T15:33:37,819[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-3[m] [1;33mo.s.c.l.LogFormatUtils[m:       GET "/mlogika-spring/chunk-H7JR6RGF.js", parameters={}
+[30m2025-02-14T15:33:37,821[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-7[m] [1;33mo.s.c.l.LogFormatUtils[m:       GET "/mlogika-spring/chunk-UKH5J6BE.js", parameters={}
+[30m2025-02-14T15:33:37,831[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-6[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[30m2025-02-14T15:33:37,845[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-8[m] [1;33mo.s.w.s.FrameworkServlet[m:       Completed 200 OK
+[30m2025-02-14T15:33:37,851[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-4[m] [1;33mo.s.c.l.LogFormatUtils[m:       GET "/mlogika-spring/chunk-HYP4BEQ7.js", parameters={}
+[30m2025-02-14T15:33:37,855[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-4[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[30m2025-02-14T15:33:37,859[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-5[m] [1;33mo.s.c.l.LogFormatUtils[m:       GET "/mlogika-spring/chunk-5MEFPONH.js", parameters={}
+[30m2025-02-14T15:33:37,861[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-5[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[30m2025-02-14T15:33:37,868[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-3[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[30m2025-02-14T15:33:37,871[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-7[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[30m2025-02-14T15:33:37,874[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-5[m] [1;33mo.s.w.s.FrameworkServlet[m:       Completed 200 OK
+[30m2025-02-14T15:33:37,876[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-6[m] [1;33mo.s.w.s.FrameworkServlet[m:       Completed 200 OK
+[30m2025-02-14T15:33:37,882[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-4[m] [1;33mo.s.w.s.FrameworkServlet[m:       Completed 200 OK
+[30m2025-02-14T15:33:37,885[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-8[m] [1;33mo.s.c.l.LogFormatUtils[m:       GET "/mlogika-spring/styles-X6I7BZRA.css", parameters={}
+[30m2025-02-14T15:33:37,892[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-8[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[30m2025-02-14T15:33:37,897[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-3[m] [1;33mo.s.w.s.FrameworkServlet[m:       Completed 200 OK
+[30m2025-02-14T15:33:37,907[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-7[m] [1;33mo.s.w.s.FrameworkServlet[m:       Completed 200 OK
+[30m2025-02-14T15:33:37,908[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-8[m] [1;33mo.s.w.s.FrameworkServlet[m:       Completed 200 OK
+[30m2025-02-14T15:33:37,938[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-10[m] [1;33mo.s.c.l.LogFormatUtils[m:       GET "/mlogika-spring/chunk-LDMTKLXK.js", parameters={}
+[30m2025-02-14T15:33:37,940[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-10[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[30m2025-02-14T15:33:37,979[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-10[m] [1;33mo.s.w.s.FrameworkServlet[m:       Completed 200 OK
+[30m2025-02-14T15:33:38,221[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-9[m] [1;33mo.s.c.l.LogFormatUtils[m:       GET "/mlogika-spring/main-GNTCPCNF.js", parameters={}
+[30m2025-02-14T15:33:38,224[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-9[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[30m2025-02-14T15:33:38,252[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-9[m] [1;33mo.s.w.s.FrameworkServlet[m:       Completed 200 OK
+[30m2025-02-14T15:33:38,608[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.c.l.LogFormatUtils[m:       GET "/mlogika-spring/login.component-I36AOWNT.js", parameters={}
+[30m2025-02-14T15:33:38,612[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[30m2025-02-14T15:33:38,661[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.FrameworkServlet[m:       Completed 200 OK
+[30m2025-02-14T15:33:38,767[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-5[m] [1;33mo.s.c.l.LogFormatUtils[m:       GET "/mlogika-spring/favicon.ico", parameters={}
+[30m2025-02-14T15:33:38,769[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-5[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[30m2025-02-14T15:33:38,780[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-5[m] [1;33mo.s.w.s.FrameworkServlet[m:       Completed 200 OK
+[30m2025-02-14T15:33:44,971[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-6[m] [1;33mo.s.c.l.LogFormatUtils[m:       GET "/mlogika-spring/styles-X6I7BZRA.css", parameters={}
+[30m2025-02-14T15:33:44,986[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-6[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[30m2025-02-14T15:33:45,020[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-6[m] [1;33mo.s.w.s.FrameworkServlet[m:       Completed 200 OK
+[30m2025-02-14T15:34:22,230[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.c.l.LogFormatUtils[m:       GET "/mlogika-spring/register.component-KEHKOVPC.js", parameters={}
+[30m2025-02-14T15:34:22,232[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[30m2025-02-14T15:34:22,307[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-1[m] [1;33mo.s.w.s.FrameworkServlet[m:       Completed 200 OK
+[30m2025-02-14T15:34:22,337[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-5[m] [1;33mo.s.c.l.LogFormatUtils[m:       GET "/mlogika-spring/chunk-YYCOKIGH.js", parameters={}
+[30m2025-02-14T15:34:22,344[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-6[m] [1;33mo.s.c.l.LogFormatUtils[m:       GET "/mlogika-spring/chunk-DXK57YMR.js", parameters={}
+[30m2025-02-14T15:34:22,350[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-5[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[30m2025-02-14T15:34:22,350[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-6[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[30m2025-02-14T15:34:22,359[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-6[m] [1;33mo.s.w.s.FrameworkServlet[m:       Completed 200 OK
+[30m2025-02-14T15:34:22,367[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-5[m] [1;33mo.s.w.s.FrameworkServlet[m:       Completed 200 OK
+[30m2025-02-14T15:34:48,824[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-3[m] [1;33mo.s.c.l.LogFormatUtils[m:       "FORWARD" dispatch for POST "/mlogika-spring/error", parameters={}
+[30m2025-02-14T15:34:48,855[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-3[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[30m2025-02-14T15:34:48,970[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-3[m] [1;33mo.s.w.s.m.m.a.AbstractMessageConverterMethodProcessor[m:       Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+[30m2025-02-14T15:34:48,974[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-3[m] [1;33mo.s.c.l.LogFormatUtils[m:       Writing [{timestamp=Fri Feb 14 15:34:48 CET 2025, status=403, error=Forbidden, path=/mlogika-spring/api/addAc (truncated)...]
+[30m2025-02-14T15:34:49,063[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-3[m] [1;33mo.s.w.s.FrameworkServlet[m:       Exiting from "FORWARD" dispatch, status 403
+[30m2025-02-14T15:34:53,771[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-9[m] [1;33mo.s.c.l.LogFormatUtils[m:       GET "/mlogika-spring/home.component-RVMRI6WI.js", parameters={}
+[30m2025-02-14T15:34:53,780[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-9[m] [1;33mo.s.w.s.h.AbstractHandlerMapping[m:       Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+[30m2025-02-14T15:34:53,817[m [36mDEBUG       [m[[1;34mhttp-nio-8080-exec-9[m] [1;33mo.s.w.s.FrameworkServlet[m:       Completed 200 OK
