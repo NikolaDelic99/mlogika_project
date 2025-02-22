@@ -1,0 +1,52 @@
+16-Feb-2025 16:53:47.858 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.98
+16-Feb-2025 16:53:48.128 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 5 2024 19:50:29 UTC
+16-Feb-2025 16:53:48.173 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.98.0
+16-Feb-2025 16:53:48.173 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+16-Feb-2025 16:53:48.173 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-205-generic
+16-Feb-2025 16:53:48.174 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+16-Feb-2025 16:53:48.174 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/jdk1.8.0_112/jre
+16-Feb-2025 16:53:48.174 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_112-b15
+16-Feb-2025 16:53:48.174 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+16-Feb-2025 16:53:48.174 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98
+16-Feb-2025 16:53:48.175 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98
+16-Feb-2025 16:53:48.190 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/conf/logging.properties
+16-Feb-2025 16:53:48.191 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+16-Feb-2025 16:53:48.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+16-Feb-2025 16:53:48.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+16-Feb-2025 16:53:48.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+16-Feb-2025 16:53:48.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+16-Feb-2025 16:53:48.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98
+16-Feb-2025 16:53:48.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98
+16-Feb-2025 16:53:48.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/temp
+16-Feb-2025 16:53:48.245 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/home/db2inst1/sqllib/lib64:/home/db2inst1/sqllib/lib64/gskit:/home/db2inst1/sqllib/lib32:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+16-Feb-2025 16:53:53.037 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+16-Feb-2025 16:53:54.150 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [8930] milliseconds
+16-Feb-2025 16:53:55.380 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+16-Feb-2025 16:53:55.409 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.98]
+16-Feb-2025 16:53:56.133 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/mlogika-spring.war]
+16-Feb-2025 16:54:26.678 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16-Feb-2025 16:55:00.316 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/mlogika-spring.war] has finished in [64,162] ms
+16-Feb-2025 16:55:00.354 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/host-manager]
+16-Feb-2025 16:55:00.647 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/host-manager] has finished in [293] ms
+16-Feb-2025 16:55:00.648 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/ROOT]
+16-Feb-2025 16:55:00.998 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/ROOT] has finished in [349] ms
+16-Feb-2025 16:55:00.998 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/manager]
+16-Feb-2025 16:55:01.090 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/manager] has finished in [92] ms
+16-Feb-2025 16:55:01.091 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/examples]
+16-Feb-2025 16:55:01.971 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/examples] has finished in [880] ms
+16-Feb-2025 16:55:01.974 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/docs]
+16-Feb-2025 16:55:02.115 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/docs] has finished in [140] ms
+16-Feb-2025 16:55:02.136 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+16-Feb-2025 16:55:02.249 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [68097] milliseconds
+16-Feb-2025 17:15:33.274 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+16-Feb-2025 17:15:33.275 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+16-Feb-2025 17:15:33.277 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+16-Feb-2025 17:15:33.494 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [mlogika-spring] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+16-Feb-2025 17:15:33.510 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+16-Feb-2025 17:15:33.519 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]

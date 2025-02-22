@@ -17,7 +17,7 @@ export class AuthService {
   private userSubject!: BehaviorSubject<User>;
   public user!: Observable<User>;
 
-  loginUrl = 'http:' + "//" + '127.0.0.1:8080' + "/" + 'api' + "/auth/login";
+  loginUrl = environment.protocol + "//" + environment.host + "/" + environment.root + "/auth/login";
 
 
   constructor(private router: Router, private httpClient: HttpClient) {

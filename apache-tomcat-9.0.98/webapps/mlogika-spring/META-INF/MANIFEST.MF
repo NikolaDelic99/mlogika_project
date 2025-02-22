@@ -1,13 +1,13 @@
 Manifest-Version: 1.0
-Spring-Boot-Classpath-Index: WEB-INF/classpath.idx
+Created-By: Maven WAR Plugin 3.3.2
+Build-Jdk-Spec: 22
 Implementation-Title: mlogika-spring
 Implementation-Version: 0.0.1
-Spring-Boot-Layers-Index: WEB-INF/layers.idx
+Main-Class: org.springframework.boot.loader.WarLauncher
 Start-Class: com.example.demo.MlogikaSpringApplication
+Spring-Boot-Version: 2.7.18
 Spring-Boot-Classes: WEB-INF/classes/
 Spring-Boot-Lib: WEB-INF/lib/
-Build-Jdk-Spec: 1.8
-Spring-Boot-Version: 2.7.18
-Created-By: Maven WAR Plugin 3.3.2
-Main-Class: org.springframework.boot.loader.WarLauncher
+Spring-Boot-Classpath-Index: WEB-INF/classpath.idx
+Spring-Boot-Layers-Index: WEB-INF/layers.idx
 

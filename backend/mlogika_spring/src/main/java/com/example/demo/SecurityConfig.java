@@ -44,7 +44,7 @@ public class SecurityConfig {
             .requestMatchers(PathRequest.toStaticResources().atCommonLocations()).permitAll()
             .antMatchers(HttpMethod.POST, "/api/auth/login").permitAll()
             .antMatchers("/*").permitAll()
-            //.antMatchers("/api/**").permitAll()
+            .antMatchers("/api/**").permitAll()
             .antMatchers("/assets/**").permitAll()
             .anyRequest().authenticated()
             //.anyRequest().permitAll()

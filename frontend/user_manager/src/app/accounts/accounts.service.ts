@@ -19,7 +19,7 @@ export class AccountsService {
 
   
   getAccounts(): Observable<UserManagerResponse<Account>> {
-      return this.http.get<UserManagerResponse<Account>>(this.baseUrl);
+      return this.http.get<UserManagerResponse<Account>>(this.baseUrl +'/getAccounts');
     }
 
   deleteAccount(accountId:number):Observable<void>{

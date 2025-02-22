@@ -1,0 +1,30 @@
+20-Feb-2025 13:09:15.803 INFO [main] org.apache.catalina.core.ApplicationContext.log 2 Spring WebApplicationInitializers detected on classpath
+20-Feb-2025 13:09:25.036 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+20-Feb-2025 13:09:37.280 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+20-Feb-2025 13:09:37.280 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+20-Feb-2025 13:09:37.282 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@14efd31b')
+20-Feb-2025 13:09:37.740 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcherServlet'
+20-Feb-2025 13:17:58.882 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+20-Feb-2025 13:17:58.882 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+20-Feb-2025 13:17:59.016 INFO [main] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcherServlet'
+20-Feb-2025 13:17:59.018 INFO [main] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+20-Feb-2025 13:19:23.893 INFO [main] org.apache.catalina.core.ApplicationContext.log 2 Spring WebApplicationInitializers detected on classpath
+20-Feb-2025 13:19:31.641 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+20-Feb-2025 13:19:42.626 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+20-Feb-2025 13:19:42.627 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+20-Feb-2025 13:19:42.629 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@86ea911')
+20-Feb-2025 13:20:17.553 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcherServlet'
+20-Feb-2025 13:28:20.937 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+20-Feb-2025 13:28:20.937 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+20-Feb-2025 13:28:20.978 INFO [main] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcherServlet'
+20-Feb-2025 13:28:20.979 INFO [main] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+20-Feb-2025 13:31:03.655 INFO [main] org.apache.catalina.core.ApplicationContext.log 2 Spring WebApplicationInitializers detected on classpath
+20-Feb-2025 13:31:13.079 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+20-Feb-2025 13:31:24.923 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+20-Feb-2025 13:31:24.924 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+20-Feb-2025 13:31:24.926 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@67718026')
+20-Feb-2025 13:31:25.288 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcherServlet'
+20-Feb-2025 13:36:36.014 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+20-Feb-2025 13:36:36.014 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+20-Feb-2025 13:36:36.046 INFO [main] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcherServlet'
+20-Feb-2025 13:36:36.047 INFO [main] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
