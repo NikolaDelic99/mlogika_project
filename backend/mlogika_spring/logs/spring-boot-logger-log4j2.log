@@ -1,25 +1,25 @@
-2025-02-22 11:34:22,025 INFO o.s.b.StartupInfoLogger [main] Starting MlogikaSpringApplicationTests using Java 22.0.2 on delca-Lenovo-V145-15AST with PID 12954 (started by delca in /home/delca/Desktop/mlogica_project/backend/mlogika_spring)
-2025-02-22 11:34:22,055 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2025-02-22 11:34:22,282 DEBUG o.s.c.s.AbstractApplicationContext [main] Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3047254d
-2025-02-22 11:34:24,407 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-22 11:34:24,604 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 164 ms. Found 1 JPA repository interfaces.
-2025-02-22 11:34:26,578 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
-2025-02-22 11:34:27,780 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
-2025-02-22 11:34:28,001 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-22 11:34:28,247 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
-2025-02-22 11:34:28,840 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2025-02-22 11:34:29,239 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2025-02-22 11:34:30,692 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2025-02-22 11:34:30,727 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-22 11:34:32,898 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2af31aba, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@682d8dad, org.springframework.security.web.context.SecurityContextPersistenceFilter@47400608, org.springframework.security.web.header.HeaderWriterFilter@6e7cb01a, org.springframework.web.filter.CorsFilter@1aebe759, org.springframework.security.web.authentication.logout.LogoutFilter@66576bd2, com.example.demo.JwtAuthenticationFilter@237c8718, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6efc9d3f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@294bb6ae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6fd37997, org.springframework.security.web.session.SessionManagementFilter@712594f4, org.springframework.security.web.access.ExceptionTranslationFilter@27c827ec, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@215404a1]
-2025-02-22 11:34:33,670 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-22 11:34:34,408 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-02-22 11:34:34,538 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [static/index.html]
-2025-02-22 11:34:34,773 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 11 mappings in 'requestMappingHandlerMapping'
-2025-02-22 11:34:34,919 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-02-22 11:34:34,994 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-02-22 11:34:35,499 INFO o.s.b.StartupInfoLogger [main] Started MlogikaSpringApplicationTests in 15.484 seconds (JVM running for 19.284)
-2025-02-22 11:34:36,146 DEBUG o.s.c.s.AbstractApplicationContext [SpringApplicationShutdownHook] Closing org.springframework.web.context.support.GenericWebApplicationContext@3047254d, started on Sat Feb 22 11:34:22 CET 2025
-2025-02-22 11:34:36,156 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-22 11:34:36,162 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2025-02-22 11:34:36,201 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-02-22 11:55:35,412 INFO o.s.b.StartupInfoLogger [main] Starting MlogikaSpringApplicationTests using Java 22.0.2 on delca-Lenovo-V145-15AST with PID 17750 (started by delca in /home/delca/Desktop/mlogica_project/backend/mlogika_spring)
+2025-02-22 11:55:35,490 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-02-22 11:55:35,712 DEBUG o.s.c.s.AbstractApplicationContext [main] Refreshing org.springframework.web.context.support.GenericWebApplicationContext@31c2affc
+2025-02-22 11:55:38,251 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-22 11:55:38,564 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 245 ms. Found 1 JPA repository interfaces.
+2025-02-22 11:55:40,793 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-02-22 11:55:42,298 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-02-22 11:55:42,605 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-22 11:55:43,000 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-02-22 11:55:43,724 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-02-22 11:55:44,148 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-02-22 11:55:45,458 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-02-22 11:55:45,511 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-22 11:55:47,735 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@37aea657, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ca9d3b2, org.springframework.security.web.context.SecurityContextPersistenceFilter@238a7e3d, org.springframework.security.web.header.HeaderWriterFilter@4351d055, org.springframework.web.filter.CorsFilter@2f8b48c3, org.springframework.security.web.authentication.logout.LogoutFilter@23e297d9, com.example.demo.JwtAuthenticationFilter@5773f83d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@47400608, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@374bf34b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2af31aba, org.springframework.security.web.session.SessionManagementFilter@c19bb2a, org.springframework.security.web.access.ExceptionTranslationFilter@1e489957, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@451cef67]
+2025-02-22 11:55:48,403 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-22 11:55:49,193 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-22 11:55:49,319 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [static/index.html]
+2025-02-22 11:55:49,551 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 11 mappings in 'requestMappingHandlerMapping'
+2025-02-22 11:55:49,690 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-22 11:55:49,743 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-22 11:55:50,166 INFO o.s.b.StartupInfoLogger [main] Started MlogikaSpringApplicationTests in 16.774 seconds (JVM running for 21.318)
+2025-02-22 11:55:50,611 DEBUG o.s.c.s.AbstractApplicationContext [SpringApplicationShutdownHook] Closing org.springframework.web.context.support.GenericWebApplicationContext@31c2affc, started on Sat Feb 22 11:55:35 CET 2025
+2025-02-22 11:55:50,641 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-22 11:55:50,656 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-02-22 11:55:50,725 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

@@ -1,72 +1,90 @@
-2025-02-22 11:47:36,925 INFO o.s.b.StartupInfoLogger [main] Starting MlogikaSpringApplication v0.0.1 using Java 1.8.0_112 on delca-Lenovo-V145-15AST with PID 15570 (/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/mlogika-spring/WEB-INF/classes started by delca in /home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/bin)
-2025-02-22 11:47:36,962 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.7.18, Spring v5.3.31
-2025-02-22 11:47:36,973 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2025-02-22 11:47:40,914 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-22 11:47:41,202 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 262 ms. Found 1 JPA repository interfaces.
-2025-02-22 11:47:43,108 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 5988 ms
-2025-02-22 11:47:45,128 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
-2025-02-22 11:47:47,023 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
-2025-02-22 11:47:47,342 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-22 11:47:48,025 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
-2025-02-22 11:47:48,681 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2025-02-22 11:47:49,596 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2025-02-22 11:47:51,861 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2025-02-22 11:47:52,590 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-22 11:47:55,491 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@45ca07cf, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14676d59, org.springframework.security.web.context.SecurityContextPersistenceFilter@31f9cb3a, org.springframework.security.web.header.HeaderWriterFilter@34bba7f7, org.springframework.web.filter.CorsFilter@b9f6daa, org.springframework.security.web.authentication.logout.LogoutFilter@1bb425e4, com.example.demo.JwtAuthenticationFilter@11a6e7d4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1756c8aa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12fb67f6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@41d7b4cf, org.springframework.security.web.session.SessionManagementFilter@518a9c8a, org.springframework.security.web.access.ExceptionTranslationFilter@1edbdb0e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@740ba30d]
-2025-02-22 11:47:55,852 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-22 11:47:56,282 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-02-22 11:47:56,390 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [static/index.html]
-2025-02-22 11:47:56,525 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 11 mappings in 'requestMappingHandlerMapping'
-2025-02-22 11:47:56,665 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-02-22 11:47:56,723 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-02-22 11:47:57,048 INFO o.s.b.StartupInfoLogger [main] Started MlogikaSpringApplication in 23.256 seconds (JVM running for 42.807)
-2025-02-22 11:47:57,076 DEBUG o.s.w.f.GenericFilterBean [main] Filter 'jwtAuthenticationFilter' configured for use
-2025-02-22 11:47:58,977 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
-2025-02-22 11:47:58,979 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected StandardServletMultipartResolver
-2025-02-22 11:47:58,979 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected AcceptHeaderLocaleResolver
-2025-02-22 11:47:58,982 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected FixedThemeResolver
-2025-02-22 11:47:58,988 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3a02d4bd
-2025-02-22 11:47:58,992 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected org.springframework.web.servlet.support.SessionFlashMapManager@50001200
-2025-02-22 11:47:58,992 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-02-22 11:47:58,993 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 15 ms
-2025-02-22 11:47:59,138 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-1] GET "/mlogika-spring/", parameters={}
-2025-02-22 11:47:59,217 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-1] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8]
-2025-02-22 11:47:59,218 DEBUG o.s.w.s.v.AbstractView [http-nio-8080-exec-1] View name 'forward:', model {}
-2025-02-22 11:47:59,223 DEBUG o.s.w.s.v.InternalResourceView [http-nio-8080-exec-1] Forwarding to [index.html]
-2025-02-22 11:47:59,236 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-1] "FORWARD" dispatch for GET "/mlogika-spring/index.html", parameters={}
-2025-02-22 11:47:59,246 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-1] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2025-02-22 11:47:59,314 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Exiting from "FORWARD" dispatch, status 200
-2025-02-22 11:47:59,319 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed 200 OK
-2025-02-22 11:47:59,428 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-4] GET "/mlogika-spring/chunk-ROGH22HM.js", parameters={}
-2025-02-22 11:47:59,428 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-3] GET "/mlogika-spring/chunk-L2FQKVSH.js", parameters={}
-2025-02-22 11:47:59,429 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-6] GET "/mlogika-spring/chunk-6PNJV7BV.js", parameters={}
-2025-02-22 11:47:59,439 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-2] GET "/mlogika-spring/chunk-EMMDC7I7.js", parameters={}
-2025-02-22 11:47:59,440 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-4] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2025-02-22 11:47:59,441 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-2] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2025-02-22 11:47:59,438 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-6] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2025-02-22 11:47:59,443 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-3] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2025-02-22 11:47:59,446 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-5] GET "/mlogika-spring/chunk-RDZLLZJG.js", parameters={}
-2025-02-22 11:47:59,460 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-7] GET "/mlogika-spring/chunk-LDMTKLXK.js", parameters={}
-2025-02-22 11:47:59,462 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-7] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2025-02-22 11:47:59,463 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-5] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2025-02-22 11:47:59,476 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-3] Completed 200 OK
-2025-02-22 11:47:59,481 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-4] Completed 200 OK
-2025-02-22 11:47:59,482 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-6] Completed 200 OK
-2025-02-22 11:47:59,496 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed 200 OK
-2025-02-22 11:47:59,509 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-3] GET "/mlogika-spring/main-HC5FTRIB.js", parameters={}
-2025-02-22 11:47:59,529 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-7] Completed 200 OK
-2025-02-22 11:47:59,535 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-5] Completed 200 OK
-2025-02-22 11:47:59,535 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-3] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2025-02-22 11:47:59,580 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-3] Completed 200 OK
-2025-02-22 11:47:59,591 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-8] GET "/mlogika-spring/styles-CAGSLPKT.css", parameters={}
-2025-02-22 11:47:59,599 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-8] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2025-02-22 11:47:59,628 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-8] Completed 200 OK
-2025-02-22 11:47:59,703 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-9] GET "/mlogika-spring/styles-CAGSLPKT.css", parameters={}
-2025-02-22 11:47:59,707 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-9] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2025-02-22 11:47:59,737 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-9] Completed 200 OK
-2025-02-22 11:48:00,049 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-10] GET "/mlogika-spring/login.component-MKDWE7GL.js", parameters={}
-2025-02-22 11:48:00,062 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-10] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2025-02-22 11:48:00,118 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-10] Completed 200 OK
-2025-02-22 11:48:11,486 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-22 11:48:11,491 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
-2025-02-22 11:48:11,519 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2025-02-22 11:57:04,228 INFO o.s.b.StartupInfoLogger [main] Starting MlogikaSpringApplication v0.0.1 using Java 1.8.0_112 on delca-Lenovo-V145-15AST with PID 17866 (/home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/webapps/mlogika-spring/WEB-INF/classes started by delca in /home/delca/Desktop/mlogica_project/apache-tomcat-9.0.98/bin)
+2025-02-22 11:57:04,284 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.7.18, Spring v5.3.31
+2025-02-22 11:57:04,287 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-02-22 11:57:07,279 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-22 11:57:07,512 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 196 ms. Found 1 JPA repository interfaces.
+2025-02-22 11:57:09,053 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4595 ms
+2025-02-22 11:57:10,752 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-02-22 11:57:12,127 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-02-22 11:57:12,577 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-22 11:57:12,949 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-02-22 11:57:13,561 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-02-22 11:57:14,098 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-02-22 11:57:16,189 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-02-22 11:57:16,230 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-22 11:57:18,459 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7c2f7667, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d2df0f5, org.springframework.security.web.context.SecurityContextPersistenceFilter@71254c46, org.springframework.security.web.header.HeaderWriterFilter@1e2abb0c, org.springframework.web.filter.CorsFilter@63098ef4, org.springframework.security.web.authentication.logout.LogoutFilter@4467fbd8, com.example.demo.JwtAuthenticationFilter@5c92147c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c457099, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5d160ce7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3770cb15, org.springframework.security.web.session.SessionManagementFilter@4c39c972, org.springframework.security.web.access.ExceptionTranslationFilter@3122e792, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@14d16b8f]
+2025-02-22 11:57:18,860 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-22 11:57:19,424 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-22 11:57:19,670 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page: class path resource [static/index.html]
+2025-02-22 11:57:19,863 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 11 mappings in 'requestMappingHandlerMapping'
+2025-02-22 11:57:19,958 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-22 11:57:19,992 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-22 11:57:20,345 INFO o.s.b.StartupInfoLogger [main] Started MlogikaSpringApplication in 18.178 seconds (JVM running for 31.265)
+2025-02-22 11:57:20,417 DEBUG o.s.w.f.GenericFilterBean [main] Filter 'jwtAuthenticationFilter' configured for use
+2025-02-22 11:57:21,768 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-02-22 11:57:21,771 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected StandardServletMultipartResolver
+2025-02-22 11:57:21,771 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected AcceptHeaderLocaleResolver
+2025-02-22 11:57:21,772 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected FixedThemeResolver
+2025-02-22 11:57:21,776 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@194c98f5
+2025-02-22 11:57:21,778 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected org.springframework.web.servlet.support.SessionFlashMapManager@3bcb8460
+2025-02-22 11:57:21,778 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-22 11:57:21,779 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 9 ms
+2025-02-22 11:57:21,902 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-1] GET "/mlogika-spring/", parameters={}
+2025-02-22 11:57:21,969 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-1] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8]
+2025-02-22 11:57:21,973 DEBUG o.s.w.s.v.AbstractView [http-nio-8080-exec-1] View name 'forward:', model {}
+2025-02-22 11:57:21,979 DEBUG o.s.w.s.v.InternalResourceView [http-nio-8080-exec-1] Forwarding to [index.html]
+2025-02-22 11:57:21,990 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-1] "FORWARD" dispatch for GET "/mlogika-spring/index.html", parameters={}
+2025-02-22 11:57:21,996 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-1] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-22 11:57:22,067 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Exiting from "FORWARD" dispatch, status 200
+2025-02-22 11:57:22,077 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed 200 OK
+2025-02-22 11:57:22,560 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-2] GET "/mlogika-spring/chunk-EMMDC7I7.js", parameters={}
+2025-02-22 11:57:22,563 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-5] GET "/mlogika-spring/chunk-6PNJV7BV.js", parameters={}
+2025-02-22 11:57:22,565 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-5] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-22 11:57:22,567 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-6] GET "/mlogika-spring/chunk-ROGH22HM.js", parameters={}
+2025-02-22 11:57:22,567 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-3] GET "/mlogika-spring/chunk-L2FQKVSH.js", parameters={}
+2025-02-22 11:57:22,569 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-4] GET "/mlogika-spring/chunk-LDMTKLXK.js", parameters={}
+2025-02-22 11:57:22,571 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-4] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-22 11:57:22,571 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-3] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-22 11:57:22,573 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-2] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-22 11:57:22,584 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-7] GET "/mlogika-spring/chunk-RDZLLZJG.js", parameters={}
+2025-02-22 11:57:22,586 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-7] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-22 11:57:22,569 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-6] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-22 11:57:22,598 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-3] Completed 200 OK
+2025-02-22 11:57:22,605 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-6] Completed 200 OK
+2025-02-22 11:57:22,616 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-5] Completed 200 OK
+2025-02-22 11:57:22,622 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed 200 OK
+2025-02-22 11:57:22,625 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-4] Completed 200 OK
+2025-02-22 11:57:22,630 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-3] GET "/mlogika-spring/main-SAJYJG6S.js", parameters={}
+2025-02-22 11:57:22,642 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-3] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-22 11:57:22,662 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-3] Completed 200 OK
+2025-02-22 11:57:22,719 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-7] Completed 200 OK
+2025-02-22 11:57:22,768 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-8] GET "/mlogika-spring/styles-CAGSLPKT.css", parameters={}
+2025-02-22 11:57:22,775 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-8] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-22 11:57:22,791 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-8] Completed 200 OK
+2025-02-22 11:57:23,156 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-9] GET "/mlogika-spring/styles-CAGSLPKT.css", parameters={}
+2025-02-22 11:57:23,158 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-9] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-22 11:57:23,172 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-9] Completed 200 OK
+2025-02-22 11:57:25,009 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-10] GET "/mlogika-spring/login.component-MKDWE7GL.js", parameters={}
+2025-02-22 11:57:25,012 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-10] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-22 11:57:25,029 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-10] Completed 200 OK
+2025-02-22 11:57:25,087 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-1] GET "/mlogika-spring/assets/gb-AROZT434.svg", parameters={}
+2025-02-22 11:57:25,109 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-1] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-22 11:57:25,125 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed 200 OK
+2025-02-22 11:57:36,780 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-6] GET "/mlogika-spring/styles-CAGSLPKT.css", parameters={}
+2025-02-22 11:57:36,782 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-6] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-22 11:57:36,808 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-6] Completed 200 OK
+2025-02-22 11:57:41,771 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-4] GET "/mlogika-spring/assets/pk-6BLSAJ2P.svg", parameters={}
+2025-02-22 11:57:41,779 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-5] GET "/mlogika-spring/assets/rs-JXSZPMKI.svg", parameters={}
+2025-02-22 11:57:41,784 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-4] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-22 11:57:41,794 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-5] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-22 11:57:41,829 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-4] Completed 200 OK
+2025-02-22 11:57:41,834 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-5] Completed 200 OK
+2025-02-22 11:57:43,141 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-9] GET "/mlogika-spring/assets/i18n/sr-Latn.json", parameters={}
+2025-02-22 11:57:43,144 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-9] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-22 11:57:43,165 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-9] Completed 200 OK
+2025-02-22 11:57:46,379 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-10] GET "/mlogika-spring/assets/i18n/en.json", parameters={}
+2025-02-22 11:57:46,381 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-10] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-22 11:57:46,418 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-10] Completed 200 OK
+2025-02-22 11:57:58,436 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-22 11:57:58,441 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2025-02-22 11:57:58,481 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
