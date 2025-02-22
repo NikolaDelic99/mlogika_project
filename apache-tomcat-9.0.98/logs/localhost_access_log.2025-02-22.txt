@@ -74,3 +74,15 @@
 127.0.0.1 - - [22/Feb/2025:11:38:09 +0100] "POST /mlogika-spring/api/addAccount HTTP/1.1" 200 37
 127.0.0.1 - - [22/Feb/2025:11:38:09 +0100] "GET /mlogika-spring/api/getAccounts HTTP/1.1" 200 3915
 127.0.0.1 - - [22/Feb/2025:11:38:29 +0100] "POST /mlogika-spring/api/auth/login HTTP/1.1" 200 158
+127.0.0.1 - - [22/Feb/2025:11:47:59 +0100] "GET /mlogika-spring/ HTTP/1.1" 200 64271
+127.0.0.1 - - [22/Feb/2025:11:47:59 +0100] "GET /mlogika-spring/chunk-6PNJV7BV.js HTTP/1.1" 200 14074
+127.0.0.1 - - [22/Feb/2025:11:47:59 +0100] "GET /mlogika-spring/chunk-L2FQKVSH.js HTTP/1.1" 200 419
+127.0.0.1 - - [22/Feb/2025:11:47:59 +0100] "GET /mlogika-spring/chunk-ROGH22HM.js HTTP/1.1" 200 419
+127.0.0.1 - - [22/Feb/2025:11:47:59 +0100] "GET /mlogika-spring/chunk-EMMDC7I7.js HTTP/1.1" 200 63101
+127.0.0.1 - - [22/Feb/2025:11:47:59 +0100] "GET /mlogika-spring/chunk-LDMTKLXK.js HTTP/1.1" 200 168598
+127.0.0.1 - - [22/Feb/2025:11:47:59 +0100] "GET /mlogika-spring/chunk-RDZLLZJG.js HTTP/1.1" 200 734984
+127.0.0.1 - - [22/Feb/2025:11:47:59 +0100] "GET /mlogika-spring/main-HC5FTRIB.js HTTP/1.1" 200 69310
+127.0.0.1 - - [22/Feb/2025:11:47:59 +0100] "GET /mlogika-spring/styles-CAGSLPKT.css HTTP/1.1" 200 89080
+127.0.0.1 - - [22/Feb/2025:11:47:59 +0100] "GET /mlogika-spring/styles-CAGSLPKT.css HTTP/1.1" 200 89080
+127.0.0.1 - - [22/Feb/2025:11:48:00 +0100] "GET /assets/flags/4x3/gb.svg HTTP/1.1" 404 786
+127.0.0.1 - - [22/Feb/2025:11:48:00 +0100] "GET /mlogika-spring/login.component-MKDWE7GL.js HTTP/1.1" 200 1845

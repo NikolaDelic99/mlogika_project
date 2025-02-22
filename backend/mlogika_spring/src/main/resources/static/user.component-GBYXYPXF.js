@@ -1,1 +1,0 @@
-import{Mb as o,Nb as i,hc as r,qb as n}from"./chunk-LDMTKLXK.js";var m=(()=>{class e{static{this.\u0275fac=function(t){return new(t||e)}}static{this.\u0275cmp=n({type:e,selectors:[["app-user"]],decls:2,vars:0,template:function(t,p){t&1&&(o(0,"p"),r(1,"user works!"),i())},encapsulation:2})}}return e})();export{m as UserComponent};
